@@ -16,8 +16,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/NII-DG/dg-packager.git",
     python_requires=">=3.8",
-    packages=setuptools.find_packages(where='dg_packager'),
-    package_dir={'': 'dg_packager'},
+    packages=setuptools.find_packages(),
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Programming Language :: Python :: 3",
@@ -27,6 +26,6 @@ setuptools.setup(
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
     ],
-    install_requires=_requires_from_file('requirements.txt'),
+    #install_requires=_requires_from_file('requirements.txt'),
 
 )
