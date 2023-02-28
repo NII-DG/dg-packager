@@ -31,7 +31,7 @@ from dg_packager.utils.ro_crate_util import RoCrateUtil
 
 class RoGenerator():
     '''
-    RoGenerator class
+    RoGenerator class for gin-fork
     '''
 
     def __init__(self, raw_metadata : dict[str, Any]):
