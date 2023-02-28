@@ -13,7 +13,7 @@ from dg_packager.ro_generator.gin_ro_generator import RoGenerator
 
 
 class TestRoGenerator(TestCase):
-
+    # test exec : python -m unittest tests.ro_generator.test_gin_ro_generator
     def test_check_key_raw_metadata_with_key(self):
         test_data = {
             "research_project" : {},
