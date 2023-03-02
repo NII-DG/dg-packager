@@ -1,0 +1,1231 @@
+{
+    "research_project": {
+        "name": "ffff",
+        "description": ""
+    },
+    "funder_orgs": [],
+    "research_orgs": [],
+    "licenses": [],
+    "data_downloads": [],
+    "repository_objs": [],
+    "hosting_institutions": [],
+    "persons": [
+        {
+            "id": "2",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka",
+            "name": "月岡 大",
+            "alias": "",
+            "affiliation": "",
+            "email": "dai.tsukioka@ivis.co.jp",
+            "telephone": "",
+            "eradResearcherNumber": ""
+        }
+    ],
+    "files": [
+        {
+            "@id": ".datalad/.gitattributes",
+            "name": ".gitattributes",
+            "contentSize": "125",
+            "encodingFormat": "text/plain",
+            "sha256": "4e5b735bedf1b77e561db193faf95dc661301c22990994d00da9c323c1b81858",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/.datalad/.gitattributes",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": ".datalad/config",
+            "name": "config",
+            "contentSize": "63",
+            "encodingFormat": "text/plain",
+            "sha256": "cdafd188cb0538134cdfcf0a352efdd550f39d53a5d647fc7619847c5cda02b4",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/.datalad/config",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": ".gitattributes",
+            "name": ".gitattributes",
+            "contentSize": "55",
+            "encodingFormat": "text/plain",
+            "sha256": "8dbd0c8dff23de1d8633cf638edeef44c1af67e86d848791d94f3fd7571dbcba",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/.gitattributes",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": ".gitignore",
+            "name": ".gitignore",
+            "contentSize": "198",
+            "encodingFormat": "text/plain",
+            "sha256": "626170c6c07f57945d543aa1a7152eb7e27ee70633db22d4e265da21029ff325",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/.gitignore",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": ".repository_id",
+            "name": ".repository_id",
+            "contentSize": "2",
+            "encodingFormat": "text/plain",
+            "sha256": "71ee45a3c0db9a9865f7313dd3372cf60dca6479d46261f3542eb9346e4a04d6",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/.repository_id",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "Dockerfile",
+            "name": "Dockerfile",
+            "contentSize": "2877",
+            "encodingFormat": "text/plain",
+            "sha256": "901e166e91018d368d9c851bf5cd5db7fa0671db9c99ca3a877a0534956ff64f",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/Dockerfile",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "LICENSE",
+            "name": "LICENSE",
+            "contentSize": "10261",
+            "encodingFormat": "text/plain",
+            "sha256": "940db9a2aedc7a188f9b6efbe1ddb0746a7f5fd2387c6ea19c98006f51a56f55",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/LICENSE",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "README.md",
+            "name": "README.md",
+            "contentSize": "4207",
+            "encodingFormat": "text/plain",
+            "sha256": "06a55350a3f3f8a9be0d3e6895b759727016967cc6e7464a5d593197b9fb4644",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/README.md",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/.github/PULL_REQUEST_TEMPLATE.md",
+            "name": "PULL_REQUEST_TEMPLATE.md",
+            "contentSize": "1019",
+            "encodingFormat": "text/plain",
+            "sha256": "5e3f5908f525fadc2b909ffa55ffe762d7c283a5b5c26237227ac33f7ce0d472",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/.github/PULL_REQUEST_TEMPLATE.md",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/.gitignore",
+            "name": ".gitignore",
+            "contentSize": "45",
+            "encodingFormat": "text/plain",
+            "sha256": "fdc96d2604f8f02ccfaa9ff533a58c0af88592385f82f14b125ccfe34449d7c8",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/.gitignore",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/enter_metadata.ipynb",
+            "name": "enter_metadata.ipynb",
+            "contentSize": "9052",
+            "encodingFormat": "text/plain",
+            "sha256": "4bd2fd0dcb872a7d1668c41e6d58a933fcefc74632d88cb6ff4afa2d5e12a85a",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/enter_metadata.ipynb",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/finish.ipynb",
+            "name": "finish.ipynb",
+            "contentSize": "9453",
+            "encodingFormat": "text/plain",
+            "sha256": "9ae65a09768e979df4ff952b8f724b3c1d1ac696d8be71a9b8ffd262270b8fce",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/finish.ipynb",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/images/S3ユースケース.png",
+            "name": "S3ユースケース.png",
+            "contentSize": "147194",
+            "encodingFormat": "image/png",
+            "sha256": "196b37853ee2e1ec4795cd112679620d427c3a697266b5efa7645cb4c3b1a152",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/images/S3%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9.png",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/images/gin-forkユースケース.png",
+            "name": "gin-forkユースケース.png",
+            "contentSize": "192043",
+            "encodingFormat": "image/png",
+            "sha256": "65b6b209d487cba89a01bb03a4c37ff8635397e15b1b2a057ceb1baa2ffe2adf",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/images/gin-fork%E3%83%A6%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%B9.png",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/images/gitURL.png",
+            "name": "gitURL.png",
+            "contentSize": "97141",
+            "encodingFormat": "image/png",
+            "sha256": "b7dbcaa29974fc6585d66054fd52be36e11bead0c3628cacd81676ac3986fb85",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/images/gitURL.png",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/images/notebooks.diag",
+            "name": "notebooks.diag",
+            "contentSize": "2846",
+            "encodingFormat": "text/plain",
+            "sha256": "a6f5405d01ceb3cd950c1aec866b5a86b25be4a570fd9466903c27612285d36a",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/images/notebooks.diag",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/images/コンテナ削除キャプチャ.png",
+            "name": "コンテナ削除キャプチャ.png",
+            "contentSize": "13946",
+            "encodingFormat": "image/png",
+            "sha256": "fabc67783be17ca25cdde451b3bb6af3e30e0e67db559beffe465ecdb1d75c5f",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/images/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E5%89%8A%E9%99%A4%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3.png",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/images/パラメータ実験用パッケージイメージ.png",
+            "name": "パラメータ実験用パッケージイメージ.png",
+            "contentSize": "8917",
+            "encodingFormat": "image/png",
+            "sha256": "7646c2f804e4faef52786e07783f505a4e16c0a761bebfbbb92bdf6587aa7bef",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/images/%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E5%AE%9F%E9%A8%93%E7%94%A8%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8.png",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/param_files/params.json",
+            "name": "params.json",
+            "contentSize": "873",
+            "encodingFormat": "text/plain",
+            "sha256": "fb0d74be0c13a2256d0f3a62be5242c2ba6fc799f174bf9d67418fbf61083c60",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/param_files/params.json",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/prepare_from_repository.ipynb",
+            "name": "prepare_from_repository.ipynb",
+            "contentSize": "84320",
+            "encodingFormat": "text/plain",
+            "sha256": "8554ed109c187103947f30064cc0e4e5c7898caa6368e40897afe3339d0068fb",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/prepare_from_repository.ipynb",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/prepare_from_s3.ipynb",
+            "name": "prepare_from_s3.ipynb",
+            "contentSize": "28998",
+            "encodingFormat": "text/plain",
+            "sha256": "20891417df7e353fba8f75c71a7b2421baabe532b9ed4f42c5865ff522224459",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/prepare_from_s3.ipynb",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/prepare_input_and_source.ipynb",
+            "name": "prepare_input_and_source.ipynb",
+            "contentSize": "2919",
+            "encodingFormat": "text/plain",
+            "sha256": "d47b4ce7141866bd1a88504cc61d13eec77b209b9ec46515f2a8887fa3307d66",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/prepare_input_and_source.ipynb",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/prepare_parameter_experiment.ipynb",
+            "name": "prepare_parameter_experiment.ipynb",
+            "contentSize": "12896",
+            "encodingFormat": "text/plain",
+            "sha256": "d1539fb08b5094306a05e69d0927644d569d219f67b8059cb62fa42813ff5325",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/prepare_parameter_experiment.ipynb",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/save.ipynb",
+            "name": "save.ipynb",
+            "contentSize": "8151",
+            "encodingFormat": "text/plain",
+            "sha256": "573d6167f848a02146f110af2f16aab54558832271241779d0a4a651a19b0787",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/save.ipynb",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/util/required_every_time.ipynb",
+            "name": "required_every_time.ipynb",
+            "contentSize": "25551",
+            "encodingFormat": "text/plain",
+            "sha256": "f1de232c062c5a63137083bfd0b564ac938a29c60fe5e04ff9b6622db8f5ae18",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/util/required_every_time.ipynb",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/util/scripts/nb_utils.py",
+            "name": "nb_utils.py",
+            "contentSize": "9083",
+            "encodingFormat": "text/plain",
+            "sha256": "79b8629a9d18c89e6cd6002fcd6b0347a131a3bfbf522eb6a5c6a4de4847815f",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/util/scripts/nb_utils.py",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/01_preparation_phase/base_work_with_GakuNinRDM.ipynb",
+            "name": "base_work_with_GakuNinRDM.ipynb",
+            "contentSize": "1466",
+            "encodingFormat": "text/plain",
+            "sha256": "be172441146f482306e5dc4a50a36aea02ffd8006f6dc0328754c50730ed711a",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/01_preparation_phase/base_work_with_GakuNinRDM.ipynb",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/02_experimental_phase/base_launch_an_experiment.ipynb",
+            "name": "base_launch_an_experiment.ipynb",
+            "contentSize": "8758",
+            "encodingFormat": "text/plain",
+            "sha256": "1cdc8302ebf5efeecdd0f3bfb1dcbcc408946fed85657a7bac2726029b5e764c",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/02_experimental_phase/base_launch_an_experiment.ipynb",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/02_experimental_phase/base_monitor_data_size.ipynb",
+            "name": "base_monitor_data_size.ipynb",
+            "contentSize": "8247",
+            "encodingFormat": "text/plain",
+            "sha256": "c40a1dec4ec94ccfa7911000d70c21e67e8dd72acd1d09ff0b3af7ab656943e3",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/02_experimental_phase/base_monitor_data_size.ipynb",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/02_experimental_phase/base_monitor_dataset_structure.ipynb",
+            "name": "base_monitor_dataset_structure.ipynb",
+            "contentSize": "8798",
+            "encodingFormat": "text/plain",
+            "sha256": "59d53288a7ef7f36dca31b2acf6ef2ecd7da7382491a4a265151fd8fe6719f70",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/02_experimental_phase/base_monitor_dataset_structure.ipynb",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/03_after_experiments_phase/base_publish.ipynb",
+            "name": "base_publish.ipynb",
+            "contentSize": "1022",
+            "encodingFormat": "text/plain",
+            "sha256": "988963a29e156cf95c4483d2a148ffa43e3c17467aa245c28885ba66113c911b",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/03_after_experiments_phase/base_publish.ipynb",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/README.md",
+            "name": "README.md",
+            "contentSize": "633",
+            "encodingFormat": "text/plain",
+            "sha256": "0bcc85364266abd4127ccd1561754419fb1dfdf795745637f7e605f1eb20e690",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/README.md",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/param_files/params.json",
+            "name": "params.json",
+            "contentSize": "873",
+            "encodingFormat": "text/plain",
+            "sha256": "fb0d74be0c13a2256d0f3a62be5242c2ba6fc799f174bf9d67418fbf61083c60",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/param_files/params.json",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/util/README.md",
+            "name": "README.md",
+            "contentSize": "76",
+            "encodingFormat": "text/plain",
+            "sha256": "2b34c4f1610db7812232dddd1088c76ce5311796146c2f1d8b41046ca4c2093b",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/util/README.md",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/util/base_finish_research.ipynb",
+            "name": "base_finish_research.ipynb",
+            "contentSize": "2778",
+            "encodingFormat": "text/plain",
+            "sha256": "1cf0cf826b78cdc147a5cd950067c04460af882f344475b2ecaf1401f92b3de0",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/util/base_finish_research.ipynb",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/util/base_required_every_time.ipynb",
+            "name": "base_required_every_time.ipynb",
+            "contentSize": "19089",
+            "encodingFormat": "text/plain",
+            "sha256": "fcff9aa4966649a906239f4b41d129fd27e4dd3c2246385bce9607a27afd1db2",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/util/base_required_every_time.ipynb",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/util/scripts/__init__.py",
+            "name": "__init__.py",
+            "contentSize": "0",
+            "encodingFormat": "text/plain",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/util/scripts/__init__.py",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/util/scripts/__pycache__/__init__.cpython-39.pyc",
+            "name": "__init__.cpython-39.pyc",
+            "contentSize": "143",
+            "encodingFormat": "application/octet-stream",
+            "sha256": "f13e0d6a9ba867608efdc43fd54df6fc4bd857efa9c09efa30a0858f3d90d1ed",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/util/scripts/__pycache__/__init__.cpython-39.pyc",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/util/scripts/__pycache__/utils.cpython-39.pyc",
+            "name": "utils.cpython-39.pyc",
+            "contentSize": "11659",
+            "encodingFormat": "application/octet-stream",
+            "sha256": "d912933a543dcddce320cd90b668be4d00c0dcdd930d079ad1ebd0a5492aab56",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/util/scripts/__pycache__/utils.cpython-39.pyc",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/util/scripts/nb_utils.py",
+            "name": "nb_utils.py",
+            "contentSize": "9314",
+            "encodingFormat": "text/plain",
+            "sha256": "d882a7dc841470dfb43db11c1b3c51533fb2c1deb59aa5cff87280a8d2642791",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/util/scripts/nb_utils.py",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/util/scripts/utils.py",
+            "name": "utils.py",
+            "contentSize": "15082",
+            "encodingFormat": "text/plain",
+            "sha256": "017a555c9f5b09a120a4428700e2a7d8524dc485501810457853824d2ca9604b",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/util/scripts/utils.py",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/base/README.md",
+            "name": "README.md",
+            "contentSize": "333",
+            "encodingFormat": "text/plain",
+            "sha256": "c5ad3f1b6ecc914053fc3952646583257a1443a3f51e36abd8241c7905c64b99",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/base/README.md",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/base/meta_data.json",
+            "name": "meta_data.json",
+            "contentSize": "0",
+            "encodingFormat": "text/plain",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/base/meta_data.json",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/for_parameters/README.md",
+            "name": "README.md",
+            "contentSize": "283",
+            "encodingFormat": "text/plain",
+            "sha256": "8da1a9709fe457d7cb9d49e8de03f3314a4fe47ad2f1691c939a7afab110e918",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/for_parameters/README.md",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/for_parameters/Snakefile",
+            "name": "Snakefile",
+            "contentSize": "0",
+            "encodingFormat": "text/plain",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/for_parameters/Snakefile",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/for_parameters/input_data/.gitkeep",
+            "name": ".gitkeep",
+            "contentSize": "0",
+            "encodingFormat": "text/plain",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/for_parameters/input_data/.gitkeep",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/for_parameters/parameter/.gitkeep",
+            "name": ".gitkeep",
+            "contentSize": "1",
+            "encodingFormat": "text/plain",
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/for_parameters/parameter/.gitkeep",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/for_parameters/parameter/output_data/.gitkeep",
+            "name": ".gitkeep",
+            "contentSize": "1",
+            "encodingFormat": "text/plain",
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/for_parameters/parameter/output_data/.gitkeep",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/for_parameters/parameter/params/.gitkeep",
+            "name": ".gitkeep",
+            "contentSize": "1",
+            "encodingFormat": "text/plain",
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/for_parameters/parameter/params/.gitkeep",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/for_parameters/source/.gitkeep",
+            "name": ".gitkeep",
+            "contentSize": "1",
+            "encodingFormat": "text/plain",
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/for_parameters/source/.gitkeep",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/with_code/README.md",
+            "name": "README.md",
+            "contentSize": "249",
+            "encodingFormat": "text/plain",
+            "sha256": "db30aa7cb6a8c272b4daffcde492bf626f348dbce2ac87d596312531a26b3d63",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/with_code/README.md",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/with_code/Snakefile",
+            "name": "Snakefile",
+            "contentSize": "0",
+            "encodingFormat": "text/plain",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/with_code/Snakefile",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/with_code/input_data/.gitkeep",
+            "name": ".gitkeep",
+            "contentSize": "0",
+            "encodingFormat": "text/plain",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/with_code/input_data/.gitkeep",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/with_code/output_data/.gitkeep",
+            "name": ".gitkeep",
+            "contentSize": "1",
+            "encodingFormat": "text/plain",
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/with_code/output_data/.gitkeep",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/with_code/source/.gitkeep",
+            "name": ".gitkeep",
+            "contentSize": "1",
+            "encodingFormat": "text/plain",
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/with_code/source/.gitkeep",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/README.md",
+            "name": "README.md",
+            "contentSize": "110",
+            "encodingFormat": "text/plain",
+            "sha256": "f8a48ea3771a0026458e1af954a50ca9b154e007fa9b1de0e64bb79b38d5865e",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/README.md",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/base_FLOW.ipynb",
+            "name": "base_FLOW.ipynb",
+            "contentSize": "36926",
+            "encodingFormat": "text/plain",
+            "sha256": "231eb8543c485208bad98e8c7ad285644fa7de7ee507b4ce0865c513bf03fa5e",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/base_FLOW.ipynb",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/except_class/__pycache__/query_err.cpython-39.pyc",
+            "name": "query_err.cpython-39.pyc",
+            "contentSize": "304",
+            "encodingFormat": "application/octet-stream",
+            "sha256": "96deb708acb09cd226f16a5933a016c87bc5d2186b2d83ea6e33c7db451022a5",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/except_class/__pycache__/query_err.cpython-39.pyc",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/except_class/query_err.py",
+            "name": "query_err.py",
+            "contentSize": "38",
+            "encodingFormat": "text/plain",
+            "sha256": "22c9169ecec4d31662f995de5689adb15315c7ea9a5d4c34138da37d4eb710f0",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/except_class/query_err.py",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/experiment.ipynb",
+            "name": "experiment.ipynb",
+            "contentSize": "10625",
+            "encodingFormat": "text/plain",
+            "sha256": "44ba7e8db22cc2764bd861f98e8c291fbea5c3786b6b60973bfb83963650d8d3",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/experiment.ipynb",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/images/GetHttpUrl.png",
+            "name": "GetHttpUrl.png",
+            "contentSize": "110702",
+            "encodingFormat": "image/png",
+            "sha256": "6d859244b23c709280c7a7236e286deea2d35cb7f85377ca4d90ef8dab7a015a",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/images/GetHttpUrl.png",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/images/maDMP実行ボタン.png",
+            "name": "maDMP実行ボタン.png",
+            "contentSize": "23752",
+            "encodingFormat": "image/png",
+            "sha256": "0c901feee24b6d21f5b46a69497e475cb55359cbf2b3dce1b6b86ea61f327530",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/images/maDMP%E5%AE%9F%E8%A1%8C%E3%83%9C%E3%82%BF%E3%83%B3.png",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/images/notebooks.diag",
+            "name": "notebooks.diag",
+            "contentSize": "2820",
+            "encodingFormat": "text/plain",
+            "sha256": "d24c399b93f76797aff60f65fed6e7c856a116c7e64435ea3dd0c7fa1ebfc47c",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/images/notebooks.diag",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/images/notebooks.svg",
+            "name": "notebooks.svg",
+            "contentSize": "25763",
+            "encodingFormat": "text/plain",
+            "sha256": "256af733d20847c93aa1db143ae8310342eddd905a3e914fb4bb58e2be36bd22",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/images/notebooks.svg",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/images/result_on_README.png",
+            "name": "result_on_README.png",
+            "contentSize": "8770",
+            "encodingFormat": "image/png",
+            "sha256": "a41171e39fdd8d820fda65e88e1efb9082133966eee64d137a1f3a577e741f80",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/images/result_on_README.png",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/images/sample_workflow.png",
+            "name": "sample_workflow.png",
+            "contentSize": "93340",
+            "encodingFormat": "image/png",
+            "sha256": "1b51db51a15863a52809fc35117c8ddd2074b5531855805d182557da78367d06",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/images/sample_workflow.png",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/images/unfreeze_button.png",
+            "name": "unfreeze_button.png",
+            "contentSize": "3902",
+            "encodingFormat": "image/png",
+            "sha256": "1effdea16cec9668f568e9647241cd165635c4d2f0f452a51b859215f52ce125",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/images/unfreeze_button.png",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/images/ノードのリンク.png",
+            "name": "ノードのリンク.png",
+            "contentSize": "449594",
+            "encodingFormat": "image/png",
+            "sha256": "c5bfc941d5a627e2ecca9a86624e630e7042d12f204da416dab18fe7fd10eea1",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/images/%E3%83%8E%E3%83%BC%E3%83%89%E3%81%AE%E3%83%AA%E3%83%B3%E3%82%AF.png",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/images/パラメータ実験用実験リポジトリのイメージ.png",
+            "name": "パラメータ実験用実験リポジトリのイメージ.png",
+            "contentSize": "63465",
+            "encodingFormat": "image/png",
+            "sha256": "1aea2250b20c011a88744bdd5402eb087a0b935ce9c29f25a982220a74f8a1ba",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/images/%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E5%AE%9F%E9%A8%93%E7%94%A8%E5%AE%9F%E9%A8%93%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8.png",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/images/研究リポジトリ.png",
+            "name": "研究リポジトリ.png",
+            "contentSize": "10524",
+            "encodingFormat": "image/png",
+            "sha256": "60c1b10d02816e28f994b372a91fbcf079ca82ccae70338a1921e55feb636e74",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/images/%E7%A0%94%E7%A9%B6%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA.png",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/monitor_package.ipynb",
+            "name": "monitor_package.ipynb",
+            "contentSize": "17585",
+            "encodingFormat": "text/plain",
+            "sha256": "914e93cf9b97d2388379cd59dae35fac11a5281dbe6be40d1513a8b1c36cfa83",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/monitor_package.ipynb",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/utils/__pycache__/display_util.cpython-39.pyc",
+            "name": "display_util.cpython-39.pyc",
+            "contentSize": "2275",
+            "encodingFormat": "application/octet-stream",
+            "sha256": "f20a3e4bd491c8c2d061a88de47b770b0d56da5969163a6add94aa1a54ac2cf9",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/utils/__pycache__/display_util.cpython-39.pyc",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/utils/display_util.py",
+            "name": "display_util.py",
+            "contentSize": "2291",
+            "encodingFormat": "text/plain",
+            "sha256": "6435029f28d8ad4316939b79d3e5382c8a5f9bc7b02374de7b24b01705b9c4bc",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/utils/display_util.py",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/utils/gin_api/__pycache__/api.cpython-39.pyc",
+            "name": "api.cpython-39.pyc",
+            "contentSize": "1742",
+            "encodingFormat": "application/octet-stream",
+            "sha256": "923f3a29ff51c6ed0b8ee0bd8e3a6a7a8530e8f940b08d0729ad3ab08519d91f",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/utils/gin_api/__pycache__/api.cpython-39.pyc",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/utils/gin_api/__pycache__/repos_search.cpython-39.pyc",
+            "name": "repos_search.cpython-39.pyc",
+            "contentSize": "1429",
+            "encodingFormat": "application/octet-stream",
+            "sha256": "e2c86950551e69e618b7ff185dd384247d62da40fc2c224be47ae2bbd63a7f56",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/utils/gin_api/__pycache__/repos_search.cpython-39.pyc",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/utils/gin_api/api.py",
+            "name": "api.py",
+            "contentSize": "1527",
+            "encodingFormat": "text/plain",
+            "sha256": "70d1e3f63d52dd5265500dacdb22ee75f94e2c1e67904d0eb3d913ad5d2e4058",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/utils/gin_api/api.py",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/utils/gin_api/repos_search.py",
+            "name": "repos_search.py",
+            "contentSize": "1295",
+            "encodingFormat": "text/plain",
+            "sha256": "c8942024161d37e90fdcc972e58a93e9ce402cf14cdf904d029e09fd1333fd7e",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/utils/gin_api/repos_search.py",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/utils/param_json/__pycache__/param_json.cpython-39.pyc",
+            "name": "param_json.cpython-39.pyc",
+            "contentSize": "2116",
+            "encodingFormat": "application/octet-stream",
+            "sha256": "5640f2fb949e626fad81c981af3a84bd79cdce5608ec330b6c1d9cefe2966163",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/utils/param_json/__pycache__/param_json.cpython-39.pyc",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/utils/param_json/param_json.py",
+            "name": "param_json.py",
+            "contentSize": "2265",
+            "encodingFormat": "text/plain",
+            "sha256": "d06308e95082961ae6b22ce1f16c4a5c29418024e1f9dc1a49dcf344fa08a39e",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/utils/param_json/param_json.py",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/utils/repository_id/__pycache__/repository_id.cpython-39.pyc",
+            "name": "repository_id.cpython-39.pyc",
+            "contentSize": "632",
+            "encodingFormat": "application/octet-stream",
+            "sha256": "f7f8e5de34c0f63de4d936e6b749e6837c22df900e19c6d4abca8e92d0446905",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/utils/repository_id/__pycache__/repository_id.cpython-39.pyc",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "WORKFLOWS/utils/repository_id/repository_id.py",
+            "name": "repository_id.py",
+            "contentSize": "401",
+            "encodingFormat": "text/plain",
+            "sha256": "ba5ba9b4b384fe7d4ce5a53f8ee20adda53d082537802fe42da14ad25a4c4144",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/utils/repository_id/repository_id.py",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "dmp.json",
+            "name": "dmp.json",
+            "contentSize": "1358",
+            "encodingFormat": "text/plain",
+            "sha256": "5e879124317d77f0adaa20471cf6ab24205484985ff2e80f1c1edae73b13f775",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/dmp.json",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "experiments/ex_1/README.md",
+            "name": "README.md",
+            "contentSize": "1264",
+            "encodingFormat": "text/plain",
+            "sha256": "cda0e0c6537ed43679e8a9f95f651323f909ac67103875684ecc34edfcb17474",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/experiments/ex_1/README.md",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "experiments/ex_1/Snakefile",
+            "name": "Snakefile",
+            "contentSize": "0",
+            "encodingFormat": "text/plain",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/experiments/ex_1/Snakefile",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "experiments/ex_1/input_data/.gitkeep",
+            "name": ".gitkeep",
+            "contentSize": "0",
+            "encodingFormat": "text/plain",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/experiments/ex_1/input_data/.gitkeep",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "experiments/ex_1/meta_data.json",
+            "name": "meta_data.json",
+            "contentSize": "62",
+            "encodingFormat": "text/plain",
+            "sha256": "655c35d0488c3974a70dbc72e35ddc7ecd682bdf3eed9f788f162c6d6508743b",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/experiments/ex_1/meta_data.json",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "experiments/ex_1/output_data/.gitkeep",
+            "name": ".gitkeep",
+            "contentSize": "1",
+            "encodingFormat": "text/plain",
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/experiments/ex_1/output_data/.gitkeep",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "experiments/ex_1/source/.gitkeep",
+            "name": ".gitkeep",
+            "contentSize": "1",
+            "encodingFormat": "text/plain",
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/experiments/ex_1/source/.gitkeep",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "experiments/ex_1/source/untitled1.txt",
+            "name": "untitled1.txt",
+            "contentSize": "23",
+            "encodingFormat": "text/plain",
+            "sha256": "cb68ec88d7dbd5d0599a3e9e3d45f729c55393deed960d54e3bca30c808a3c79",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/experiments/ex_1/source/untitled1.txt",
+            "sdDatePublished": "",
+            "experimentPackageFlag": true
+        },
+        {
+            "@id": "images/maDMP_to_workflow.jpg",
+            "name": "maDMP_to_workflow.jpg",
+            "contentSize": "106997",
+            "encodingFormat": "image/jpeg",
+            "sha256": "bbf5c109de04f61d6eec1afecac646a39e1f45a1f760b861d26fffcb1980497e",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/images/maDMP_to_workflow.jpg",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "images/user_custom_area.png",
+            "name": "user_custom_area.png",
+            "contentSize": "5752",
+            "encodingFormat": "image/png",
+            "sha256": "207913bb1211ab6df141daca5404208f6854f012743c31f7e496f6a213409fac",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/images/user_custom_area.png",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "maDMP.ipynb",
+            "name": "maDMP.ipynb",
+            "contentSize": "10347",
+            "encodingFormat": "text/plain",
+            "sha256": "fd1615a4d771eea7bcf4c595df871014fbe5d19c18af869ee766fa369b621e3f",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/maDMP.ipynb",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "pipeline.json",
+            "name": "pipeline.json",
+            "contentSize": "14",
+            "encodingFormat": "text/plain",
+            "sha256": "53fafadb938195a4240b475dafc1d69a6d7ce8a126e33b28591e424945d08298",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/pipeline.json",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "experiments/ex_1/input_data/S3/sample.txt",
+            "name": "sample.txt",
+            "contentSize": "30",
+            "encodingFormat": "text/plain",
+            "sha256": "763cbbc3750144fa147bb5cfdf0185bef7d0ade617410b81d839432ebcaee9ca",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/experiments/ex_1/input_data/S3/sample.txt",
+            "sdDatePublished": "2023-03-02T18:11:13.619448+09:00",
+            "experimentPackageFlag": true
+        },
+        {
+            "@id": "experiments/ex_1/input_data/untitled",
+            "name": "untitled",
+            "contentSize": "0",
+            "encodingFormat": "None",
+            "sha256": "a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/experiments/ex_1/input_data/untitled",
+            "sdDatePublished": "2023-03-02T18:08:41.493106+09:00",
+            "experimentPackageFlag": true
+        },
+        {
+            "@id": "experiments/ex_1/input_data/untitled.txt",
+            "name": "untitled.txt",
+            "contentSize": "17",
+            "encodingFormat": "text/plain",
+            "sha256": "2280e0cf7a5ddfa0cc8cc53b767e85f808605e7bcde39922f99c58ec04f3486c",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/experiments/ex_1/input_data/untitled.txt",
+            "sdDatePublished": "2023-03-02T18:08:41.882698+09:00",
+            "experimentPackageFlag": true
+        }
+    ],
+    "datasets": [
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/for_parameters/",
+            "name": "for_parameters",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/for_parameters/"
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/with_code/input_data/",
+            "name": "input_data",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/with_code/input_data/"
+        },
+        {
+            "@id": "WORKFLOWS/except_class/",
+            "name": "except_class",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/except_class/"
+        },
+        {
+            "@id": "experiments/ex_1/input_data/S3/",
+            "name": "S3",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/experiments/ex_1/input_data/S3/"
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/01_preparation_phase/",
+            "name": "01_preparation_phase",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/01_preparation_phase/"
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/with_code/source/",
+            "name": "source",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/with_code/source/"
+        },
+        {
+            "@id": "WORKFLOWS/utils/param_json/",
+            "name": "param_json",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/utils/param_json/"
+        },
+        {
+            "@id": "WORKFLOWS/utils/param_json/__pycache__/",
+            "name": "__pycache__",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/utils/param_json/__pycache__/"
+        },
+        {
+            "@id": "experiments/ex_1/source/",
+            "name": "source",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/experiments/ex_1/source/"
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/with_code/output_data/",
+            "name": "output_data",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/with_code/output_data/"
+        },
+        {
+            "@id": "WORKFLOWS/utils/__pycache__/",
+            "name": "__pycache__",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/utils/__pycache__/"
+        },
+        {
+            "@id": "WORKFLOWS/utils/gin_api/",
+            "name": "gin_api",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/utils/gin_api/"
+        },
+        {
+            "@id": "experiments/ex_1/output_data/",
+            "name": "output_data",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/experiments/ex_1/output_data/"
+        },
+        {
+            "@id": "images/",
+            "name": "images",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/images/"
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/util/",
+            "name": "util",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/util/"
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/util/scripts/__pycache__/",
+            "name": "__pycache__",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/util/scripts/__pycache__/"
+        },
+        {
+            "@id": "experiments/",
+            "name": "experiments",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/experiments/"
+        },
+        {
+            "@id": "experiments/ex_1/input_data/",
+            "name": "input_data",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/experiments/ex_1/input_data/"
+        },
+        {
+            "@id": "WORKFLOWS/utils/",
+            "name": "utils",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/utils/"
+        },
+        {
+            "@id": ".datalad/",
+            "name": ".datalad",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/.datalad/"
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/images/",
+            "name": "images",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/images/"
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/util/scripts/",
+            "name": "scripts",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/util/scripts/"
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/for_parameters/input_data/",
+            "name": "input_data",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/for_parameters/input_data/"
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/for_parameters/parameter/output_data/",
+            "name": "output_data",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/for_parameters/parameter/output_data/"
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/for_parameters/parameter/",
+            "name": "parameter",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/for_parameters/parameter/"
+        },
+        {
+            "@id": "WORKFLOWS/images/",
+            "name": "images",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/images/"
+        },
+        {
+            "@id": "WORKFLOWS/utils/repository_id/",
+            "name": "repository_id",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/utils/repository_id/"
+        },
+        {
+            "@id": "WORKFLOWS/",
+            "name": "WORKFLOWS",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/"
+        },
+        {
+            "@id": "WORKFLOWS/.github/",
+            "name": ".github",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/.github/"
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/",
+            "name": "EX-WORKFLOWS",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/"
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/02_experimental_phase/",
+            "name": "02_experimental_phase",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/02_experimental_phase/"
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/base/",
+            "name": "base",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/base/"
+        },
+        {
+            "@id": "WORKFLOWS/utils/repository_id/__pycache__/",
+            "name": "__pycache__",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/utils/repository_id/__pycache__/"
+        },
+        {
+            "@id": "experiments/ex_1/",
+            "name": "ex_1",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/experiments/ex_1/"
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/with_code/",
+            "name": "with_code",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/with_code/"
+        },
+        {
+            "@id": "WORKFLOWS/except_class/__pycache__/",
+            "name": "__pycache__",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/except_class/__pycache__/"
+        },
+        {
+            "@id": "WORKFLOWS/utils/gin_api/__pycache__/",
+            "name": "__pycache__",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/utils/gin_api/__pycache__/"
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/util/",
+            "name": "util",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/util/"
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/03_after_experiments_phase/",
+            "name": "03_after_experiments_phase",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/03_after_experiments_phase/"
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/param_files/",
+            "name": "param_files",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/param_files/"
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/",
+            "name": "PACKAGE",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/"
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/for_parameters/parameter/params/",
+            "name": "params",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/for_parameters/parameter/params/"
+        },
+        {
+            "@id": "WORKFLOWS/EX-WORKFLOWS/param_files/",
+            "name": "param_files",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/EX-WORKFLOWS/param_files/"
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/",
+            "name": "FLOW",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/"
+        },
+        {
+            "@id": "WORKFLOWS/FLOW/util/scripts/",
+            "name": "scripts",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/FLOW/util/scripts/"
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/",
+            "name": "scheme",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/"
+        },
+        {
+            "@id": "WORKFLOWS/PACKAGE/scheme/for_parameters/source/",
+            "name": "source",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/ivis-tsukioka/repo1/src/master/WORKFLOWS/PACKAGE/scheme/for_parameters/source/"
+        }
+    ],
+    "gin_monitorings": [
+        {
+            "contentSize": "1GB",
+            "workflowIdentifier": "basic",
+            "datasetStructure": "with_code"
+        }
+    ],
+    "dmps": []
+}

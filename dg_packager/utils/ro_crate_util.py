@@ -18,6 +18,10 @@ from nii_dg.schema.ginfork import File as Ginfork_File
 
 class RoCrateUtil:
 
+    # ==================================================================
+    # Operationg RO-Crate <JSON>
+    # ==================================================================
+
     @staticmethod
     def get_all_entity_data_form_json(ro_crate_json: dict[str, Any]) -> list[dict[str, Any]]:
         '''
@@ -97,6 +101,9 @@ class RoCrateUtil:
         '''
         return ro_crate.get_by_entity_type(entity=entity_name)
 
+    # ==================================================================
+    # Operationg RO-Crate <instance from nii_dg.ro_crate.ROCrat>
+    # ==================================================================
     @staticmethod
     def get_file_by_instance(ro_crate: ROCrate, schema_type: SchemaType)-> list[Entity]:
         '''
