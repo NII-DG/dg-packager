@@ -419,7 +419,7 @@ class TestRoGenerator(TestCase):
                 {
                     "@id": "",
                     "name":  "",
-                    "contentSize":  0,
+                    "contentSize":  "0",
                     "encodingFormat":  "",
                     "sha256":  "",
                     "url": "",
@@ -429,7 +429,7 @@ class TestRoGenerator(TestCase):
                 {
                     "@id": "",
                     "name": "",
-                    "contentSize":  0,
+                    "contentSize":  "0",
                     "encodingFormat":  "",
                     "sha256": "",
                     "url":"",
@@ -582,7 +582,7 @@ class TestRoGenerator(TestCase):
                                 {
                                     "@id": "",
                                     "name": "",
-                                    "contentSize":  0,
+                                    "contentSize":  "0",
                                     "encodingFormat":  "",
                                     "sha256": "",
                                     "url":"",
@@ -855,7 +855,7 @@ class TestRoGenerator(TestCase):
                                 {
                                     "@id": "",
                                     "name": "",
-                                    "contentSize":  0,
+                                    "contentSize":  "0",
                                     "encodingFormat":  "",
                                     "sha256": "",
                                     "url":"",
@@ -1096,7 +1096,7 @@ class TestRoGenerator(TestCase):
                                 {
                                     "@id": "",
                                     "name": "",
-                                    "contentSize":  0,
+                                    "contentSize":  "0",
                                     "encodingFormat":  "",
                                     "sha256": "",
                                     "url":"",
@@ -1152,7 +1152,7 @@ class TestRoGenerator(TestCase):
                                 {
                                     "@id": "",
                                     "name": "",
-                                    "contentSize":  0,
+                                    "contentSize":  "0",
                                     "encodingFormat":  "",
                                     "sha256": "",
                                     "url":"",
@@ -1423,7 +1423,7 @@ class TestRoGenerator(TestCase):
             "files": [{
                     "@id": "",
                     "name":  "",
-                    "contentSize":  0,
+                    "contentSize":  "0",
                     "encodingFormat":  "",
                     "sha256":  "",
                     "url": "",
@@ -1470,7 +1470,7 @@ class TestRoGenerator(TestCase):
                                 {
                                     "@id": "",
                                     "name": "",
-                                    "contentSize":  0,
+                                    "contentSize":  "0",
                                     "encodingFormat":  "",
                                     "sha256": "",
                                     "url":"",
@@ -1512,7 +1512,7 @@ class TestRoGenerator(TestCase):
                                 {
                                     "@id": "",
                                     "name": "",
-                                    "contentSize":  0,
+                                    "contentSize":  "0",
                                     "encodingFormat":  "",
                                     "sha256": "",
                                     "url":"",
@@ -1555,7 +1555,7 @@ class TestRoGenerator(TestCase):
                                 {
                                     "@id": "",
                                     "name": "",
-                                    "contentSize":  0,
+                                    "contentSize":  "0",
                                     "encodingFormat":  "",
                                     "sha256": "",
                                     "url":"",
