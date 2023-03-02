@@ -154,7 +154,7 @@ class FileEntity:
 
     def creata_common_props(self,
                             name: str,
-                            contentSize: int,
+                            contentSize: str,
                             sdDatePublished: str,
                             encodingFormat: str,
                             sha256: str,
@@ -167,8 +167,8 @@ class FileEntity:
         if name:
             props["name"] = name
 
-        if contentSize >= 0:
-            props["contentSize"] = str(contentSize) + 'B'
+        if contentSize:
+            props["contentSize"] = contentSize + 'B'
 
         if sdDatePublished:
             props["sdDatePublished"] = sdDatePublished

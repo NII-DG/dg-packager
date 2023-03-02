@@ -210,7 +210,7 @@
         {
             "@id": "text1.txt",
             "name": "text1.txt",
-            "contentSize": 1,
+            "contentSize": "1",
             "encodingFormat": "text/plain",
             "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
             "url": "https://github.com/username/repository/text1",
@@ -220,7 +220,7 @@
         {
             "@id": "experiments/ex_1/input_data/text2.txt",
             "name": "text2.txt",
-            "contentSize": 2,
+            "contentSize": "2",
             "encodingFormat": "text/plain",
             "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
             "url": "https://github.com/username/repository/text2",
@@ -230,7 +230,7 @@
         {
             "@id": "experiments/ex_1/source/text3.txt",
             "name": "text3.txt",
-            "contentSize": 3,
+            "contentSize": "3",
             "encodingFormat": "text/plain",
             "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
             "url": "https://github.com/username/repository/text3",
@@ -240,7 +240,7 @@
         {
             "@id": "experiments/ex_1/output_data/text4.txt",
             "name": "text4.txt",
-            "contentSize": 4,
+            "contentSize": "4",
             "encodingFormat": "text/plain",
             "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
             "url": "https://github.com/username/repository/text4",
@@ -312,7 +312,7 @@
                         {
                             "@id": "text1.txt",
                             "name": "text1.txt",
-                            "contentSize": 1,
+                            "contentSize": "1",
                             "encodingFormat": "text/plain",
                             "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
                             "url": "https://github.com/username/repository/text1",
@@ -321,7 +321,7 @@
                         {
                             "@id": "experiments/ex_1/input_data/text2.txt",
                             "name": "text2.txt",
-                            "contentSize": 2,
+                            "contentSize": "2",
                             "encodingFormat": "text/plain",
                             "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
                             "url": "https://github.com/username/repository/text2",
@@ -351,7 +351,7 @@
                         {
                             "@id": "experiments/ex_1/source/text3.txt",
                             "name": "text3.txt",
-                            "contentSize": 3,
+                            "contentSize": "3",
                             "encodingFormat": "text/plain",
                             "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
                             "url": "https://github.com/username/repository/text3",
@@ -397,7 +397,7 @@
                         {
                             "@id": "experiments/ex_1/output_data/text4.txt",
                             "name": "text4.txt",
-                            "contentSize": 4,
+                            "contentSize": "4",
                             "encodingFormat": "text/plain",
                             "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
                             "url": "https://github.com/username/repository/text4",
@@ -449,7 +449,7 @@
                         {
                             "@id": "experiments/ex_1/output_data/text4.txt",
                             "name": "text4.txt",
-                            "contentSize": 4,
+                            "contentSize": "4",
                             "encodingFormat": "text/plain",
                             "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
                             "url": "https://github.com/username/repository/text4",
@@ -458,7 +458,7 @@
                         {
                             "@id": "experiments/ex_1/input_data/text2.txt",
                             "name": "text2.txt",
-                            "contentSize": 2,
+                            "contentSize": "2",
                             "encodingFormat": "text/plain",
                             "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
                             "url": "https://github.com/username/repository/text2",

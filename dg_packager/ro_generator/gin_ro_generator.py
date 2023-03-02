@@ -856,11 +856,7 @@ class RoGenerator():
                 if target not in key_list:
                     absence_list.append(f'{object_name}[{index}].{target}')
                 else:
-                    if target == 'contentSize':
-                        value = file.get(target)
-                        if type(value) is not int:
-                            invaid_type_list.append(f'{object_name}[{index}].{target} is not integer')
-                    elif target == 'experimentPackageFlag':
+                    if target == 'experimentPackageFlag':
                         value = file.get(target)
                         if type(value) is not bool:
                             invaid_type_list.append(f'{object_name}[{index}].{target} is not boolean')
@@ -1045,14 +1041,9 @@ class RoGenerator():
                                                 if file_target not in key_list:
                                                     absence_list.append(f'{object_name}[{index}].hasPart[{dmp_data_index}].related_data[{related_data_index}].{file_target}')
                                                 else:
-                                                    if file_target == 'contentSize':
-                                                        related_data_value = related_data.get(file_target)
-                                                        if type(related_data_value) is not int:
-                                                            invaid_type_list.append(f'{object_name}[{index}].hasPart[{dmp_data_index}].related_data[{related_data_index}].{file_target} is not integer')
-                                                    else:
-                                                        related_data_value = related_data.get(file_target)
-                                                        if type(related_data_value) is not str:
-                                                            invaid_type_list.append(f'{object_name}[{index}].hasPart[{dmp_data_index}].related_data[{related_data_index}].{file_target} is not string')
+                                                    related_data_value = related_data.get(file_target)
+                                                    if type(related_data_value) is not str:
+                                                        invaid_type_list.append(f'{object_name}[{index}].hasPart[{dmp_data_index}].related_data[{related_data_index}].{file_target} is not string')
                             else:
                                 if type(value) is not str:
                                     invaid_type_list.append(f'{object_name}[{index}].hasPart[{dmp_data_index}].{target} is not string')
@@ -1107,14 +1098,9 @@ class RoGenerator():
                                                 if file_target not in key_list:
                                                     absence_list.append(f'{object_name}[{index}].hasPart[{dmp_data_index}].related_data[{related_data_index}].{file_target}')
                                                 else:
-                                                    if file_target == 'contentSize':
-                                                        related_data_value = related_data.get(file_target)
-                                                        if type(related_data_value) is not int:
-                                                            invaid_type_list.append(f'{object_name}[{index}].hasPart[{dmp_data_index}].related_data[{related_data_index}].{file_target} is not integer')
-                                                    else:
-                                                        related_data_value = related_data.get(file_target)
-                                                        if type(related_data_value) is not str:
-                                                            invaid_type_list.append(f'{object_name}[{index}].hasPart[{dmp_data_index}].related_data[{related_data_index}].{file_target} is not string')
+                                                    related_data_value = related_data.get(file_target)
+                                                    if type(related_data_value) is not str:
+                                                        invaid_type_list.append(f'{object_name}[{index}].hasPart[{dmp_data_index}].related_data[{related_data_index}].{file_target} is not string')
 
 
                             else:
@@ -1185,14 +1171,9 @@ class RoGenerator():
                                                 if file_target not in key_list:
                                                     absence_list.append(f'{object_name}[{index}].hasPart[{dmp_data_index}].related_data[{related_data_index}].{file_target}')
                                                 else:
-                                                    if file_target == 'contentSize':
-                                                        related_data_value = related_data.get(file_target)
-                                                        if type(related_data_value) is not int:
-                                                            invaid_type_list.append(f'{object_name}[{index}].hasPart[{dmp_data_index}].related_data[{related_data_index}].{file_target} is not integer')
-                                                    else:
-                                                        related_data_value = related_data.get(file_target)
-                                                        if type(related_data_value) is not str:
-                                                            invaid_type_list.append(f'{object_name}[{index}].hasPart[{dmp_data_index}].related_data[{related_data_index}].{file_target} is not string')
+                                                    related_data_value = related_data.get(file_target)
+                                                    if type(related_data_value) is not str:
+                                                        invaid_type_list.append(f'{object_name}[{index}].hasPart[{dmp_data_index}].related_data[{related_data_index}].{file_target} is not string')
                             else:
                                 if type(value) is not str:
                                     invaid_type_list.append(f'{object_name}[{index}].hasPart[{dmp_data_index}].{target} is not string')
