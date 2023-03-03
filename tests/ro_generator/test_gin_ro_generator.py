@@ -533,7 +533,7 @@ class TestRoGenerator(TestCase):
         absence_list, invaid_type_list = ro_gnt.check_key_gin_monitoring()
 
         self.assertEqual(3, len(absence_list))
-        self.assertEqual(4, len(invaid_type_list))
+        self.assertEqual(0, len(invaid_type_list))
 
         test_data = {
             "gin_monitoring" : ""

@@ -117,12 +117,10 @@
             "url": "http://dg01.dg.rcos.nii.ac.jp/demo_user1/repo1/src/master/images/"
         }
     ],
-    "gin_monitorings": [
-        {
-            "contentSize": "1GB",
-            "workflowIdentifier": "basic",
-            "datasetStructure": "with_code"
-        }
-    ],
+    "gin_monitoring": {
+        "contentSize": "1GB",
+        "workflowIdentifier": "basic",
+        "datasetStructure": "with_code"
+    },
     "dmps": []
 }

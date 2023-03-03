@@ -691,6 +691,10 @@ class RoGenerator():
         data = self.raw_metadata[object_name]
         absence_list : list[str] = list[str]()
         invaid_type_list = list[str]()
+        if type(data) is not dict:
+            invaid_type_list.append(f'{object_name} is not object')
+            return absence_list, invaid_type_list
+
         targets = ['contentSize', 'workflowIdentifier', 'datasetStructure']
         key_list = data.keys()
         for target in targets:
