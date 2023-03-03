@@ -19,7 +19,7 @@ class HostingInstitutionEntity:
         '''
         base の HostingInstitution インスタンスの生成メソッド
         '''
-        return Base_HostingInstitution(id=id, props=common_props)
+        return Base_HostingInstitution(id_=id, props=common_props)
 
     def creata_common_props(self,
                             name: str,

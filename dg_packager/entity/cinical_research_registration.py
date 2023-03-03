@@ -20,7 +20,7 @@ class ClinicalResearchRegistrationEntity:
         amed の ClinicalResearchRegistration インスタンスの生成メソッド
         '''
         props = common_props
-        return Amed_ClinicalResearchRegistration(id=id, props=props)
+        return Amed_ClinicalResearchRegistration(id_=id, props=props)
 
     def creata_common_props(self,
                             name: str,

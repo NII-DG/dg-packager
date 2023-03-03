@@ -26,7 +26,7 @@ class FileEntity:
         '''
         base の File インスタンスの生成メソッド
         '''
-        return Base_File(id=id, props=common_props)
+        return Base_File(id_=id, props=common_props)
 
     def generate_cao(self,
                      id: str,
@@ -42,7 +42,7 @@ class FileEntity:
         if dmpDataNumber_id:
             props["dmpDataNumber"] = dmpDataNumber
 
-        return Cao_File(id=id, props=props)
+        return Cao_File(id_=id, props=props)
 
     def convert_to_cao(self, file: Base_File, dmpDataNumber: Cao_DMP,) -> Cao_File:
         common_props = self.get_common_props(file)
@@ -74,7 +74,7 @@ class FileEntity:
         if dmpDataNumber_id:
             props["dmpDataNumber"] = dmpDataNumber
 
-        return Amed_File(id=id, props=props)
+        return Amed_File(id_=id, props=props)
 
     def convert_to_amed(self, file: Base_File, dmpDataNumber: Amed_DMP) -> Amed_File:
         common_props = self.get_common_props(file)
@@ -106,7 +106,7 @@ class FileEntity:
         if dmpDataNumber_id:
             props["dmpDataNumber"] = dmpDataNumber
 
-        return Meti_File(id=id, props=props)
+        return Meti_File(id_=id, props=props)
 
     def convert_to_meti(self, file: Base_File, dmpDataNumber: Meti_DMP) -> Meti_File:
         common_props = self.get_common_props(file)
@@ -134,7 +134,7 @@ class FileEntity:
         '''
         props = common_props
         props["experimentPackageFlag"] = experimentPackageFlag
-        return Ginfork_File(id=id, props=props)
+        return Ginfork_File(id_=id, props=props)
 
     def convert_to_ginfork(self, file: Base_File, experimentPackageFlag: bool) -> Ginfork_File:
         common_props = self.get_common_props(file)

@@ -275,13 +275,11 @@
             "url": "https://github.com/username/repository/experiments/ex_1/output_data"
         }
     ],
-    "gin_monitorings": [
-        {
-            "contentSize": "1GB",
-            "workflowIdentifier": "basic",
-            "datasetStructure": "with_code"
-        }
-    ],
+    "gin_monitorings": {
+        "contentSize": "1GB",
+        "workflowIdentifier": "basic",
+        "datasetStructure": "with_code"
+    },
     "dmps": [
         {
             "type": "cao",

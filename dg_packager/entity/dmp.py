@@ -23,6 +23,7 @@ class DMPEntity:
         '''
         コンストラクタ
         '''
+        self.ID_PREFIX = "#dmp:"
 
     def generate_amed(self,
                     common_props: dict[str, Any],
@@ -59,8 +60,7 @@ class DMPEntity:
         if reasonForConcealment:
             props["reasonForConcealment"] = reasonForConcealment
 
-
-        return Amed_DMP(id=common_props['dataNumber'], props=props)
+        return Amed_DMP(id_=self.create_dmp_id(common_props['dataNumber']), props=props)
 
     def generate_meti(self,
                     common_props: dict[str, Any],
@@ -121,7 +121,7 @@ class DMPEntity:
         if contactPoint_id:
             props["contactPoint"] = contactPoint
 
-        return Meti_DMP(id=common_props['dataNumber'], props=props)
+        return Meti_DMP(id_=self.create_dmp_id(common_props['dataNumber']), props=props)
 
 
     def generate_cao(self,
@@ -194,7 +194,7 @@ class DMPEntity:
         if keyword:
              props["keyword"] = keyword
 
-        return Cao_DMP(id=common_props['dataNumber'], props=props)
+        return Cao_DMP(id_=self.create_dmp_id(common_props['dataNumber']), props=props)
 
 
     def creata_common_props(self,
@@ -255,3 +255,6 @@ class DMPEntity:
 
             is_open_access = True
         return is_open_access
+
+    def create_dmp_id(self, dataNumber: int) -> str:
+        return self.ID_PREFIX + str(dataNumber)

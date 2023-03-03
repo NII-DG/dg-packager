@@ -20,7 +20,7 @@ class DataDownloadEntity:
         '''
         base の DataDownload インスタンスの生成メソッド
         '''
-        return Base_DataDownload(id=id, props=common_props)
+        return Base_DataDownload(id_=id, props=common_props)
 
     def creata_common_props(self,
                             description: str,

@@ -13,7 +13,6 @@ class GinMonitoringEntity:
         '''
 
     def generate_gifork(self,
-                        id: int,
                         common_props: dict[str, Any]
                         ) -> GinMonitoring:
         '''
@@ -26,7 +25,7 @@ class GinMonitoringEntity:
         [param] id は 1 以上で設定してください。
 
         '''
-        return GinMonitoring(id=id, props=common_props)
+        return GinMonitoring(props=common_props)
 
     def creata_common_props(self,
                             about: RootDataEntity,

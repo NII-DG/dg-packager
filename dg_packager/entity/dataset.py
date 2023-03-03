@@ -19,7 +19,7 @@ class DatasetEntity:
         '''
         baseのDatasetEntityインスタンスの生成メソッド
         '''
-        return Base_Dataset(id=id, props=common_props)
+        return Base_Dataset(id_=id, props=common_props)
 
     def creata_common_props(self,
                             name: str,

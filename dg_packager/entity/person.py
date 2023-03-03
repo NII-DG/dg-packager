@@ -22,7 +22,7 @@ class PersonEntity:
         '''
         base の Person インスタンスの生成メソッド
         '''
-        return Base_Person(id=id, props=common_props)
+        return Base_Person(id_=id, props=common_props)
 
     def generate_cao(self,
                     id: str,
@@ -36,7 +36,7 @@ class PersonEntity:
         if eradResearcherNumber:
             props["eradResearcherNumber"] = eradResearcherNumber
 
-        return Cao_Person(id=id, props=props)
+        return Cao_Person(id_=id, props=props)
 
     def creata_common_props(self,
                             name: str,

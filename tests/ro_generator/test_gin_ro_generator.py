@@ -26,7 +26,7 @@ class TestRoGenerator(TestCase):
             "persons": [],
             "files": [],
             "datasets": [],
-            "gin_monitorings": [],
+            "gin_monitoring": {},
             "dmps": []
         }
 
@@ -57,7 +57,7 @@ class TestRoGenerator(TestCase):
             "persons": None,
             "files": None,
             "datasets": None,
-            "gin_monitorings": None,
+            "gin_monitoring": None,
             "dmps": None,
         }
 
@@ -509,45 +509,40 @@ class TestRoGenerator(TestCase):
         self.assertEqual(3, len(absence_list))
         self.assertEqual(4, len(invaid_type_list))
 
-    def test_check_key_gin_monitorings_with_key(self):
+    def test_check_key_gin_monitoring_with_key(self):
         test_data = {
-            "gin_monitorings" : [
+            "gin_monitoring" :
                 {
                     "contentSize":  "",
                     "workflowIdentifier": "",
                     "datasetStructure": "",
-                },
-                {
-                    "contentSize": "",
-                    "workflowIdentifier": "",
-                    "datasetStructure": "",
-                },
-            ]
+                }
         }
         ro_gnt = RoGenerator(raw_metadata=test_data)
-        absence_list, invaid_type_list = ro_gnt.check_key_gin_monitorings()
+        absence_list, invaid_type_list = ro_gnt.check_key_gin_monitoring()
 
         self.assertEqual(0, len(absence_list))
         self.assertEqual(0, len(invaid_type_list))
 
-    def test_check_key_gin_monitorings_without_key(self):
+    def test_check_key_gin_monitoring_without_key(self):
 
         test_data = {
-            "gin_monitorings" : [
-                dict(),
-                {
-                    "contentSize":  None,
-                    "workflowIdentifier": None,
-                    "datasetStructure": None,
-                },
-                "",
-            ]
+            "gin_monitoring" : dict()
         }
         ro_gnt = RoGenerator(raw_metadata=test_data)
-        absence_list, invaid_type_list = ro_gnt.check_key_gin_monitorings()
+        absence_list, invaid_type_list = ro_gnt.check_key_gin_monitoring()
 
         self.assertEqual(3, len(absence_list))
-        self.assertEqual(4, len(invaid_type_list))
+        self.assertEqual(0, len(invaid_type_list))
+
+        test_data = {
+            "gin_monitoring" : ""
+        }
+        ro_gnt = RoGenerator(raw_metadata=test_data)
+        absence_list, invaid_type_list = ro_gnt.check_key_gin_monitoring()
+
+        self.assertEqual(0, len(absence_list))
+        self.assertEqual(1, len(invaid_type_list))
 
 
     def test_check_key_dmps_with_key_for_cao(self):
@@ -1435,11 +1430,11 @@ class TestRoGenerator(TestCase):
                     "name":  "",
                     "url": "",
                 },],
-            "gin_monitorings": [{
+            "gin_monitoring": {
                     "contentSize":  "",
                     "workflowIdentifier": "",
                     "datasetStructure": "",
-                },],
+                },
             "dmps": [
                 {
                     "type": "cao",
@@ -1691,15 +1686,12 @@ class TestRoGenerator(TestCase):
                 },
                 "" # invaid_type 1 OK
             ],
-            "gin_monitorings": [
-                {}, # no_key 3 OK
+            "gin_monitoring":
                 { # invaid_type 3 OK
                     "contentSize":  None,
                     "workflowIdentifier": None,
                     "datasetStructure": None,
                 },
-                "" # invaid_type 1 OK
-            ],
             "dmps": [
                 "", # invaid_type 1 OK
                 { # invaid_type 4 OK
@@ -1856,10 +1848,10 @@ class TestRoGenerator(TestCase):
         except ParameterError as e:
             error_dict = e.get_msg_for_check_key()
             required_key = error_dict['required_key']
-            self.assertEqual(116, len(required_key))
+            self.assertEqual(113, len(required_key))
 
             invalid_value_type = error_dict['invalid_value_type']
-            self.assertEqual(144, len(invalid_value_type))
+            self.assertEqual(143, len(invalid_value_type))
             invalid_value = error_dict['invalid_value']
             self.assertEqual(1, len(invalid_value))
 
@@ -1868,6 +1860,25 @@ class TestRoGenerator(TestCase):
         dir_name = './tests/test_data/'
         json_file = dir_name + file_name
         json_open = open(json_file, 'r')
+        json_load = json.load(json_open)
+        json_open.close()
+        ro_gnt = RoGenerator(raw_metadata=json_load)
+
+        try:
+            ro_crate = ro_gnt.generate()
+            print(ro_crate)
+        except ParameterError as e:
+            error_dict = e.get_msg_for_check_key()
+            for key in error_dict.keys():
+                error_list = error_dict.get(key)
+                for index in range(len(error_list)):
+                    print(f'{key} ; [{index:05}] : {error_list[index]}')
+
+    def test_generate_with_data_from_gin_api(self):
+        file_name = 'test_data_from_gin_api.json'
+        dir_name = './tests/test_data/'
+        json_file = dir_name + file_name
+        json_open = open(json_file, 'r', encoding="utf-8")
         json_load = json.load(json_open)
         json_open.close()
         ro_gnt = RoGenerator(raw_metadata=json_load)
