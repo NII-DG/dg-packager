@@ -19,7 +19,7 @@ class LicenseEntity:
         '''
         base の License インスタンスの生成メソッド
         '''
-        return Base_License(id=id, props=common_props)
+        return Base_License(id_=id, props=common_props)
 
     def creata_common_props(self,
                             name: str,

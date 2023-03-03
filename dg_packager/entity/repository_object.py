@@ -19,7 +19,7 @@ class RepositoryObjectEntity:
         '''
         base の RepositoryObject インスタンスの生成メソッド
         '''
-        return Base_RepositoryObject(id=id, props=common_props)
+        return Base_RepositoryObject(id_=id, props=common_props)
 
     def creata_common_props(self,
                             name: str,

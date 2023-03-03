@@ -21,7 +21,7 @@ class ContactPointEntity:
         base の DataDownload インスタンスの生成メソッド
         '''
         id = self.get_id(common_props=common_props)
-        return Base_ContactPoint(id=id, props=common_props)
+        return Base_ContactPoint(id_=id, props=common_props)
 
     def creata_common_props(self,
                             name: str,

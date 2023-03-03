@@ -16,7 +16,7 @@ class OrganizationEntity:
         '''
         base の Organization インスタンスの生成メソッド
         '''
-        return Base_Organization(id=id, props=common_props)
+        return Base_Organization(id_=id, props=common_props)
 
     def creata_common_props(self,
                             name: str,
