@@ -1881,3 +1881,22 @@ class TestRoGenerator(TestCase):
                 error_list = error_dict.get(key)
                 for index in range(len(error_list)):
                     print(f'{key} ; [{index:05}] : {error_list[index]}')
+
+    def test_generate_with_data_from_gin_api(self):
+        file_name = 'test_data_from_gin_api.json'
+        dir_name = './tests/test_data/'
+        json_file = dir_name + file_name
+        json_open = open(json_file, 'r', encoding="utf-8")
+        json_load = json.load(json_open)
+        json_open.close()
+        ro_gnt = RoGenerator(raw_metadata=json_load)
+
+        try:
+            ro_crate = ro_gnt.generate()
+            print(ro_crate)
+        except ParameterError as e:
+            error_dict = e.get_msg_for_check_key()
+            for key in error_dict.keys():
+                error_list = error_dict.get(key)
+                for index in range(len(error_list)):
+                    print(f'{key} ; [{index:05}] : {error_list[index]}')
