@@ -170,24 +170,19 @@ class RoGenerator():
             ro_crate.add(dataset_ent)
 
         # ==========================================================
-        # gin_monitorings data to RO-Crate(ginfork.GinMonitoring)
+        # gin_monitoring data to RO-Crate(ginfork.GinMonitoring)
         # ==========================================================
         # Create ginfork.GinMnitoring
-        gin_monitorings = raw_metadata["gin_monitorings"]
+        gin_monitoring = raw_metadata["gin_monitoring"]
         gm_generator = GinMonitoringEntity()
-        for index in range(len(gin_monitorings)):
-            gin_monitoring = gin_monitorings[index]
-            common_props = gm_generator.creata_common_props(
-                about=ro_crate.root,
-                contentSize=ContentSizeType.value_of(gin_monitoring["contentSize"]),
-                workflowIdentifier=WorkflowIdentifierType.value_of(gin_monitoring["workflowIdentifier"]),
-                datasetStructure=DatasetStructureType.value_of(gin_monitoring["datasetStructure"])
-                )
-            gm_ent = gm_generator.generate_gifork(
-                id=(index+1),
-                common_props=common_props
+        common_props = gm_generator.creata_common_props(
+            about=ro_crate.root,
+            contentSize=ContentSizeType.value_of(gin_monitoring["contentSize"]),
+            workflowIdentifier=WorkflowIdentifierType.value_of(gin_monitoring["workflowIdentifier"]),
+            datasetStructure=DatasetStructureType.value_of(gin_monitoring["datasetStructure"])
             )
-            ro_crate.add(gm_ent)
+        gm_ent = gm_generator.generate_gifork(common_props=common_props)
+        ro_crate.add(gm_ent)
 
         #==========================================================
         #                DMP data to RO-Crate
@@ -632,8 +627,8 @@ class RoGenerator():
             absence_keys, invalid_type_keys = self.check_key_datasets()
             absence_list.extend(absence_keys)
             invaid_type_list.extend(invalid_type_keys)
-        if data.get('gin_monitorings') != None:
-            absence_keys, invalid_type_keys = self.check_key_gin_monitorings()
+        if data.get('gin_monitoring') != None:
+            absence_keys, invalid_type_keys = self.check_key_gin_monitoring()
             absence_list.extend(absence_keys)
             invaid_type_list.extend(invalid_type_keys)
         if data.get('dmps') != None:
@@ -659,13 +654,13 @@ class RoGenerator():
         absence_list : list[str] = list[str]()
         invaid_type_list = list[str]()
         key_list = data.keys()
-        targets = ['research_project', 'funder_orgs', 'research_orgs', 'licenses', 'data_downloads', 'repository_objs','hosting_institutions', 'persons', 'files', 'datasets', 'gin_monitorings', 'dmps']
+        targets = ['research_project', 'funder_orgs', 'research_orgs', 'licenses', 'data_downloads', 'repository_objs','hosting_institutions', 'persons', 'files', 'datasets', 'gin_monitoring', 'dmps']
         for target in targets:
             if target not in key_list:
                 absence_list.append(f'{target}')
             else:
                 value = data.get(target)
-                if target == 'research_project':
+                if target == 'research_project' or target == 'gin_monitoring':
                     if type(value) is not dict:
                         invaid_type_list.append(f'{target} is not object')
                 else:
@@ -689,6 +684,22 @@ class RoGenerator():
                 if type(value) is not str:
                     invaid_type_list.append(f'{object_name}.{target} is not string')
 
+        return absence_list, invaid_type_list
+
+    def check_key_gin_monitoring(self):
+        object_name = 'gin_monitoring'
+        data = self.raw_metadata[object_name]
+        absence_list : list[str] = list[str]()
+        invaid_type_list = list[str]()
+        targets = ['contentSize', 'workflowIdentifier', 'datasetStructure']
+        key_list = data.keys()
+        for target in targets:
+            if target not in key_list:
+                absence_list.append(f'{object_name}.{target}')
+            else:
+                value = data.get(target)
+                if type(value) is not str:
+                    invaid_type_list.append(f'{object_name}.{target} is not string')
         return absence_list, invaid_type_list
 
     def check_key_funder_orgs(self):
@@ -885,30 +896,9 @@ class RoGenerator():
                     value = dataset.get(target)
                     if type(value) is not str:
                          invaid_type_list.append(f'{object_name}[{index}].{target} is not string')
-
         return absence_list, invaid_type_list
 
-    def check_key_gin_monitorings(self):
-        object_name = 'gin_monitorings'
-        data = self.raw_metadata[object_name]
-        absence_list : list[str] = list[str]()
-        invaid_type_list = list[str]()
-        targets = ['contentSize', 'workflowIdentifier', 'datasetStructure']
-        for index in range(len(data)):
-            gm = data[index]
-            if type(gm) is not dict:
-                invaid_type_list.append(f'{object_name}[{index}] is not object')
-                continue
-            key_list = gm.keys()
-            for target in targets:
-                if target not in key_list:
-                    absence_list.append(f'{object_name}[{index}].{target}')
-                else:
-                    value = gm.get(target)
-                    if type(value) is not str:
-                         invaid_type_list.append(f'{object_name}[{index}].{target} is not string')
 
-        return absence_list, invaid_type_list
 
     def check_key_dmps(self):
         object_name = 'dmps'

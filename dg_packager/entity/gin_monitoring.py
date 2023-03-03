@@ -13,7 +13,6 @@ class GinMonitoringEntity:
         '''
 
     def generate_gifork(self,
-                        id: int,
                         common_props: dict[str, Any]
                         ) -> GinMonitoring:
         '''
