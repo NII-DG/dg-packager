@@ -9,10 +9,10 @@ from dg_packager.error.error import ParameterError
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
-from dg_packager.ro_generator.gin_ro_generator import RoGenerator
+from dg_packager.ro_generator.gin_ro_generator import GinRoGenerator
 
 
-class TestRoGenerator(TestCase):
+class TestGinRoGenerator(TestCase):
     # test exec : python -m unittest tests.ro_generator.test_gin_ro_generator
     def test_check_key_raw_metadata_with_key(self):
         test_data = {
@@ -30,7 +30,7 @@ class TestRoGenerator(TestCase):
             "dmps": []
         }
 
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_raw_metadata()
 
         self.assertEqual(0, len(absence_list))
@@ -39,7 +39,7 @@ class TestRoGenerator(TestCase):
     def test_check_key_raw_metadata_without_key(self):
         test_data = dict()
 
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_raw_metadata()
         self.assertEqual(12, len(absence_list))
         self.assertEqual(0, len(invaid_type_list))
@@ -61,7 +61,7 @@ class TestRoGenerator(TestCase):
             "dmps": None,
         }
 
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_raw_metadata()
         self.assertEqual(0, len(absence_list))
         self.assertEqual(12, len(invaid_type_list))
@@ -74,7 +74,7 @@ class TestRoGenerator(TestCase):
             }
         }
 
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_research_project()
 
         self.assertEqual(0, len(absence_list))
@@ -85,7 +85,7 @@ class TestRoGenerator(TestCase):
             "research_project" : dict()
         }
 
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_research_project()
 
         self.assertEqual(2, len(absence_list))
@@ -99,7 +99,7 @@ class TestRoGenerator(TestCase):
             }
         }
 
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_research_project()
 
         self.assertEqual(0, len(absence_list))
@@ -124,7 +124,7 @@ class TestRoGenerator(TestCase):
                 }
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_funder_orgs()
 
         self.assertEqual(0, len(absence_list))
@@ -145,7 +145,7 @@ class TestRoGenerator(TestCase):
                     "",
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_funder_orgs()
         self.assertEqual(5, len(absence_list))
         self.assertEqual(6, len(invaid_type_list))
@@ -167,7 +167,7 @@ class TestRoGenerator(TestCase):
                 }
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_research_orgs()
 
         self.assertEqual(0, len(absence_list))
@@ -187,7 +187,7 @@ class TestRoGenerator(TestCase):
                     ""
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_research_orgs()
         self.assertEqual(4, len(absence_list))
         self.assertEqual(5, len(invaid_type_list))
@@ -208,7 +208,7 @@ class TestRoGenerator(TestCase):
                 }
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_licenses()
 
         self.assertEqual(0, len(absence_list))
@@ -227,7 +227,7 @@ class TestRoGenerator(TestCase):
                     "",
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_licenses()
         self.assertEqual(3, len(absence_list))
         self.assertEqual(4, len(invaid_type_list))
@@ -249,7 +249,7 @@ class TestRoGenerator(TestCase):
                 }
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_data_downloads()
 
         self.assertEqual(0, len(absence_list))
@@ -269,7 +269,7 @@ class TestRoGenerator(TestCase):
                     "",
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_data_downloads()
         self.assertEqual(4, len(absence_list))
         self.assertEqual(5, len(invaid_type_list))
@@ -289,7 +289,7 @@ class TestRoGenerator(TestCase):
                 }
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_repository_objs()
 
         self.assertEqual(0, len(absence_list))
@@ -308,7 +308,7 @@ class TestRoGenerator(TestCase):
                     "",
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_repository_objs()
 
         self.assertEqual(3, len(absence_list))
@@ -332,7 +332,7 @@ class TestRoGenerator(TestCase):
                 }
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_hosting_institutions()
 
         self.assertEqual(0, len(absence_list))
@@ -352,7 +352,7 @@ class TestRoGenerator(TestCase):
                     "",
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_hosting_institutions()
 
         self.assertEqual(4, len(absence_list))
@@ -384,7 +384,7 @@ class TestRoGenerator(TestCase):
                 }
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_persons()
         self.assertEqual(0, len(absence_list))
         self.assertEqual(0, len(invaid_type_list))
@@ -407,7 +407,7 @@ class TestRoGenerator(TestCase):
                 "",
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_persons()
         self.assertEqual(8, len(absence_list))
         self.assertEqual(9, len(invaid_type_list))
@@ -438,7 +438,7 @@ class TestRoGenerator(TestCase):
                 }
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_files()
 
         self.assertEqual(0, len(absence_list))
@@ -463,7 +463,7 @@ class TestRoGenerator(TestCase):
                 "",
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_files()
 
         self.assertEqual(8, len(absence_list))
@@ -484,7 +484,7 @@ class TestRoGenerator(TestCase):
                 },
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_datasets()
 
         self.assertEqual(0, len(absence_list))
@@ -503,7 +503,7 @@ class TestRoGenerator(TestCase):
                 "",
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_datasets()
 
         self.assertEqual(3, len(absence_list))
@@ -518,7 +518,7 @@ class TestRoGenerator(TestCase):
                     "datasetStructure": "",
                 }
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_gin_monitoring()
 
         self.assertEqual(0, len(absence_list))
@@ -529,7 +529,7 @@ class TestRoGenerator(TestCase):
         test_data = {
             "gin_monitoring" : dict()
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_gin_monitoring()
 
         self.assertEqual(3, len(absence_list))
@@ -538,7 +538,7 @@ class TestRoGenerator(TestCase):
         test_data = {
             "gin_monitoring" : ""
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_gin_monitoring()
 
         self.assertEqual(0, len(absence_list))
@@ -590,7 +590,7 @@ class TestRoGenerator(TestCase):
 
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
 
 
@@ -612,7 +612,7 @@ class TestRoGenerator(TestCase):
 
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
         self.assertEqual(0, len(absence_list))
         self.assertEqual(2, len(invaid_type_list))
@@ -631,7 +631,7 @@ class TestRoGenerator(TestCase):
 
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
 
         self.assertEqual(0, len(absence_list))
@@ -645,7 +645,7 @@ class TestRoGenerator(TestCase):
 
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
         self.assertEqual(2, len(absence_list))
         self.assertEqual(0, len(invaid_type_list))
@@ -660,7 +660,7 @@ class TestRoGenerator(TestCase):
 
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
         self.assertEqual(4, len(absence_list))
         self.assertEqual(0, len(invaid_type_list))
@@ -683,7 +683,7 @@ class TestRoGenerator(TestCase):
 
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
         self.assertEqual(15, len(absence_list))
         self.assertEqual(0, len(invaid_type_list))
@@ -720,7 +720,7 @@ class TestRoGenerator(TestCase):
 
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
         self.assertEqual(0, len(absence_list))
         self.assertEqual(15, len(invaid_type_list))
@@ -758,7 +758,7 @@ class TestRoGenerator(TestCase):
 
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
 
         self.assertEqual(0, len(absence_list))
@@ -809,7 +809,7 @@ class TestRoGenerator(TestCase):
 
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
         self.assertEqual(7, len(absence_list))
         self.assertEqual(7, len(invaid_type_list))
@@ -863,7 +863,7 @@ class TestRoGenerator(TestCase):
 
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
 
 
@@ -884,7 +884,7 @@ class TestRoGenerator(TestCase):
 
                 ]
             }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
 
         self.assertEqual(0, len(absence_list))
@@ -903,7 +903,7 @@ class TestRoGenerator(TestCase):
 
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
 
 
@@ -920,7 +920,7 @@ class TestRoGenerator(TestCase):
 
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
 
         self.assertEqual(3, len(absence_list))
@@ -939,7 +939,7 @@ class TestRoGenerator(TestCase):
 
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
         self.assertEqual(0, len(absence_list))
         self.assertEqual(2, len(invaid_type_list))
@@ -957,7 +957,7 @@ class TestRoGenerator(TestCase):
 
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
         self.assertEqual(17, len(absence_list))
         self.assertEqual(0, len(invaid_type_list))
@@ -996,7 +996,7 @@ class TestRoGenerator(TestCase):
 
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
         self.assertEqual(0, len(absence_list))
         self.assertEqual(17, len(invaid_type_list))
@@ -1053,7 +1053,7 @@ class TestRoGenerator(TestCase):
 
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
         self.assertEqual(7, len(absence_list))
         self.assertEqual(12, len(invaid_type_list))
@@ -1104,7 +1104,7 @@ class TestRoGenerator(TestCase):
 
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
 
         self.assertEqual(3, len(absence_list))
@@ -1160,7 +1160,7 @@ class TestRoGenerator(TestCase):
 
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
 
         for index in range(len(absence_list)):
@@ -1185,7 +1185,7 @@ class TestRoGenerator(TestCase):
                 }
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
         self.assertEqual(0, len(absence_list))
         self.assertEqual(2, len(invaid_type_list))
@@ -1206,7 +1206,7 @@ class TestRoGenerator(TestCase):
                 }
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
         self.assertEqual(0, len(absence_list))
         self.assertEqual(7, len(invaid_type_list))
@@ -1220,7 +1220,7 @@ class TestRoGenerator(TestCase):
                 }
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
         self.assertEqual(7, len(absence_list))
         self.assertEqual(0, len(invaid_type_list))
@@ -1241,7 +1241,7 @@ class TestRoGenerator(TestCase):
                 }
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
         self.assertEqual(0, len(absence_list))
         self.assertEqual(2, len(invaid_type_list))
@@ -1262,7 +1262,7 @@ class TestRoGenerator(TestCase):
                 }
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
         self.assertEqual(13, len(absence_list))
         self.assertEqual(0, len(invaid_type_list))
@@ -1299,7 +1299,7 @@ class TestRoGenerator(TestCase):
                 }
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
         self.assertEqual(0, len(absence_list))
         self.assertEqual(13, len(invaid_type_list))
@@ -1358,7 +1358,7 @@ class TestRoGenerator(TestCase):
                 }
             ]
         }
-        ro_gnt = RoGenerator(raw_metadata=test_data)
+        ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list, invalid_value_list = ro_gnt.check_key_dmps()
         self.assertEqual(10, len(absence_list))
         self.assertEqual(12, len(invaid_type_list))
@@ -1564,7 +1564,7 @@ class TestRoGenerator(TestCase):
         }
 
         try:
-            ro_gnt = RoGenerator(raw_metadata=test_data)
+            ro_gnt = GinRoGenerator(raw_metadata=test_data)
             ro_gnt.check_key()
         except ParameterError as e:
             error_dict = e.get_msg_for_check_key()
@@ -1577,7 +1577,7 @@ class TestRoGenerator(TestCase):
         }
 
         try:
-            ro_gnt = RoGenerator(raw_metadata=test_data)
+            ro_gnt = GinRoGenerator(raw_metadata=test_data)
             ro_gnt.check_key()
         except ParameterError as e:
             error_dict = e.get_msg_for_check_key()
@@ -1843,7 +1843,7 @@ class TestRoGenerator(TestCase):
         }
 
         try:
-            ro_gnt = RoGenerator(raw_metadata=test_data)
+            ro_gnt = GinRoGenerator(raw_metadata=test_data)
             ro_gnt.check_key()
         except ParameterError as e:
             error_dict = e.get_msg_for_check_key()
@@ -1862,7 +1862,7 @@ class TestRoGenerator(TestCase):
         json_open = open(json_file, 'r')
         json_load = json.load(json_open)
         json_open.close()
-        ro_gnt = RoGenerator(raw_metadata=json_load)
+        ro_gnt = GinRoGenerator(raw_metadata=json_load)
 
         try:
             ro_crate = ro_gnt.generate()
@@ -1881,7 +1881,7 @@ class TestRoGenerator(TestCase):
         json_open = open(json_file, 'r', encoding="utf-8")
         json_load = json.load(json_open)
         json_open.close()
-        ro_gnt = RoGenerator(raw_metadata=json_load)
+        ro_gnt = GinRoGenerator(raw_metadata=json_load)
 
         try:
             ro_crate = ro_gnt.generate()

@@ -29,7 +29,7 @@ from nii_dg.entity import Entity
 from dg_packager.utils.ro_crate_util import RoCrateUtil
 
 
-class RoGenerator():
+class GinRoGenerator():
     '''
     RoGenerator class for gin-fork
     '''
