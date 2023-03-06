@@ -4,7 +4,7 @@
 from unittest import TestCase
 import json
 import logging
-from dg_packager.error.error import ParameterError
+from dg_packager.error.error import JsonValidationError, RoPkgError
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -1566,8 +1566,8 @@ class TestGinRoGenerator(TestCase):
         try:
             ro_gnt = GinRoGenerator(raw_metadata=test_data)
             ro_gnt.check_key()
-        except ParameterError as e:
-            error_dict = e.get_msg_for_check_key()
+        except JsonValidationError as e:
+            error_dict = e.get_err_msg_for_check_key()
             for key in error_dict.keys():
                 print(f'{key} : {error_dict.get(key)}')
             self.fail()
@@ -1579,8 +1579,8 @@ class TestGinRoGenerator(TestCase):
         try:
             ro_gnt = GinRoGenerator(raw_metadata=test_data)
             ro_gnt.check_key()
-        except ParameterError as e:
-            error_dict = e.get_msg_for_check_key()
+        except JsonValidationError as e:
+            error_dict = e.get_err_msg_for_check_key()
             error_list = error_dict['required_key']
             self.assertEqual(12, len(error_list))
 
@@ -1845,8 +1845,8 @@ class TestGinRoGenerator(TestCase):
         try:
             ro_gnt = GinRoGenerator(raw_metadata=test_data)
             ro_gnt.check_key()
-        except ParameterError as e:
-            error_dict = e.get_msg_for_check_key()
+        except JsonValidationError as e:
+            error_dict = e.get_err_msg_for_check_key()
             required_key = error_dict['required_key']
             self.assertEqual(113, len(required_key))
 
@@ -1867,8 +1867,8 @@ class TestGinRoGenerator(TestCase):
         try:
             ro_crate = ro_gnt.generate()
             print(ro_crate)
-        except ParameterError as e:
-            error_dict = e.get_msg_for_check_key()
+        except JsonValidationError as e:
+            error_dict = e.get_err_msg_for_check_key()
             for key in error_dict.keys():
                 error_list = error_dict.get(key)
                 for index in range(len(error_list)):
@@ -1886,9 +1886,32 @@ class TestGinRoGenerator(TestCase):
         try:
             ro_crate = ro_gnt.generate()
             print(ro_crate)
-        except ParameterError as e:
-            error_dict = e.get_msg_for_check_key()
+        except JsonValidationError as e:
+            error_dict = e.get_err_msg_for_check_key()
             for key in error_dict.keys():
                 error_list = error_dict.get(key)
                 for index in range(len(error_list)):
                     print(f'{key} ; [{index:05}] : {error_list[index]}')
+
+    def test_generate_with_invaild_data_from_gin_api(self):
+        file_name = 'test_invaild_data_from_gin_api.json'
+        dir_name = './tests/test_data/'
+        json_file = dir_name + file_name
+        json_open = open(json_file, 'r', encoding="utf-8")
+        json_load = json.load(json_open)
+        json_open.close()
+
+        try:
+            ro_crate = GinRoGenerator.Generate(json_load)
+            print(ro_crate)
+            self.fail()
+        except JsonValidationError as e:
+            error_dict = e.get_err_msg_for_check_key()
+            for key in error_dict.keys():
+                error_list = error_dict.get(key)
+                for index in range(len(error_list)):
+                    print(f'{key} ; [{index:05}] : {error_list[index]}')
+            self.fail()
+        except RoPkgError as e :
+            print("except RoPkgError as e :")
+            print(e)

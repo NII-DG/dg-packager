@@ -1,0 +1,126 @@
+{
+    "research_project": {
+        "name": "readsfdfd",
+        "description": "afdafsadsfds"
+    },
+    "funder_orgs": [],
+    "research_orgs": [
+        {
+            "@id": "https://ror.org/05wks2t16",
+            "name": "University JJYSCUVI",
+            "description": "MUSTSAWDGDIODSYCGSNOANLJBYASPBBOMNSMXHTBCYIEXHGRCJ",
+            "alias": "MOCATQBE"
+        }
+    ],
+    "licenses": [],
+    "data_downloads": [],
+    "repository_objs": [],
+    "hosting_institutions": [],
+    "persons": [
+        {
+            "id": "12",
+            "url": "https://orcid.org/0000-0001-5473-8797",
+            "name": "デモデモ デモ",
+            "alias": "D. demo",
+            "affiliation": "https://ror.org/05wks2t16",
+            "email": "demo-u1@asd.com",
+            "telephone": "",
+            "eradResearcherNumber": ""
+        }
+    ],
+    "files": [
+        {
+            "@id": ".repository_id",
+            "name": ".repository_id",
+            "contentSize": "2",
+            "encodingFormat": "text/plain",
+            "sha256": "25fc0e7096fc653718202dc30b0c580b8ab87eac11a700cba03a7c021bc35b0c",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/demo_user1/repo1/src/master/.repository_id",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "Dockerfile",
+            "name": "",
+            "contentSize": "2877",
+            "encodingFormat": "text/plain",
+            "sha256": "901e166e91018d368d9c851bf5cd5db7fa0671db9c99ca3a877a0534956ff64f",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/demo_user1/repo1/src/master/Dockerfile",
+            "sdDatePublished": "2023-03-03T06:42:27Z",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "LICENSE",
+            "name": "",
+            "contentSize": "10261",
+            "encodingFormat": "text/plain",
+            "sha256": "940db9a2aedc7a188f9b6efbe1ddb0746a7f5fd2387c6ea19c98006f51a56f55",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/demo_user1/repo1/src/master/LICENSE",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "README.md",
+            "name": "README.md",
+            "contentSize": "3163",
+            "encodingFormat": "text/plain",
+            "sha256": "2d86ec3ddd9cac01ace925474f8bbb2096189192a16004d6ae79db4388741af7",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/demo_user1/repo1/src/master/README.md",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "dmp.json",
+            "name": "dmp.json",
+            "contentSize": "1306",
+            "encodingFormat": "text/plain",
+            "sha256": "384414f6f6b026d706f9622b5233e6b229532fdd90e47b4184ec2ca4bef726ab",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/demo_user1/repo1/src/master/dmp.json",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "images/maDMP_to_workflow.jpg",
+            "name": "maDMP_to_workflow.jpg",
+            "contentSize": "106997",
+            "encodingFormat": "image/jpeg",
+            "sha256": "bbf5c109de04f61d6eec1afecac646a39e1f45a1f760b861d26fffcb1980497e",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/demo_user1/repo1/src/master/images/maDMP_to_workflow.jpg",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "images/user_custom_area.png",
+            "name": "user_custom_area.png",
+            "contentSize": "5752",
+            "encodingFormat": "image/png",
+            "sha256": "207913bb1211ab6df141daca5404208f6854f012743c31f7e496f6a213409fac",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/demo_user1/repo1/src/master/images/user_custom_area.png",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "maDMP.ipynb",
+            "name": "maDMP.ipynb",
+            "contentSize": "8365",
+            "encodingFormat": "text/plain",
+            "sha256": "63271872f640787d0bbc4463a1b0b415d598635eecea43d87ce0a6dbc9305ddb",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/demo_user1/repo1/src/master/maDMP.ipynb",
+            "sdDatePublished": "",
+            "experimentPackageFlag": false
+        }
+    ],
+    "datasets": [
+        {
+            "@id": "images/",
+            "name": "images",
+            "url": "http://dg01.dg.rcos.nii.ac.jp/demo_user1/repo1/src/master/images/"
+        }
+    ],
+    "gin_monitoring": {
+        "contentSize": "1GB",
+        "workflowIdentifier": "basic",
+        "datasetStructure": "with_code"
+    },
+    "dmps": []
+}

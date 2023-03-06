@@ -1,7 +1,9 @@
 
+import json
+import traceback
 from typing import Any
 from nii_dg.ro_crate import ROCrate
-from dg_packager.error.error import ParameterError
+from dg_packager.error.error import JsonValidationError, RoPkgError
 from dg_packager.entity.file import FileEntity
 from dg_packager.entity.dataset import DatasetEntity
 from dg_packager.entity.gin_monitoring import GinMonitoringEntity
@@ -25,6 +27,7 @@ from nii_dg.schema.cao import Person as cao_person, DMP as cao_DMP
 from nii_dg.schema.meti import DMP as meti_DMP
 from nii_dg.schema.amed import DMP as amed_DMP, ClinicalResearchRegistration
 from nii_dg.entity import Entity
+from nii_dg.error import CheckPropsError
 
 from dg_packager.utils.ro_crate_util import RoCrateUtil
 
@@ -43,6 +46,22 @@ class GinRoGenerator():
         matadata : this param is mass of gin's metadata
         '''
         self.raw_metadata = raw_metadata
+
+    @staticmethod
+    def Generate(raw_metadata : dict[str, Any])->dict[str, Any]:
+        ro_gnt = GinRoGenerator(raw_metadata)
+
+        try:
+            return ro_gnt.generate()
+
+        except CheckPropsError as cpe :
+            t = traceback.format_exception_only(type(cpe), cpe)
+            raw_error_msg = t[0]
+            forward_index = raw_error_msg.find("{")
+            backward_index = raw_error_msg.rfind("}")
+            shaped = raw_error_msg[forward_index:backward_index+1].replace('\'', '\"')
+            data = json.loads(f'{{"results":[{shaped}]}}')
+            raise RoPkgError(data)
 
     def generate(self) -> dict[str, Any]:
         '''
@@ -644,7 +663,7 @@ class GinRoGenerator():
                 invalid_Msg['invalid_value_type'] = invaid_type_list
             if len(invalid_value_list)>0:
                 invalid_Msg['invalid_value'] = invalid_value_list
-            raise ParameterError(invalid_Msg)
+            raise JsonValidationError(invalid_Msg)
 
 
 
