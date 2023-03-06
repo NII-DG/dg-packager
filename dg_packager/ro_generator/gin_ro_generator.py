@@ -53,7 +53,6 @@ class GinRoGenerator():
 
         try:
             return ro_gnt.generate()
-
         except CheckPropsError as cpe :
             t = traceback.format_exception_only(type(cpe), cpe)
             raw_error_msg = t[0]
