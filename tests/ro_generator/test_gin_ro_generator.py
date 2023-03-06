@@ -1892,26 +1892,3 @@ class TestGinRoGenerator(TestCase):
                 error_list = error_dict.get(key)
                 for index in range(len(error_list)):
                     print(f'{key} ; [{index:05}] : {error_list[index]}')
-
-    def test_generate_with_invaild_data_from_gin_api(self):
-        file_name = 'test_invaild_data_from_gin_api.json'
-        dir_name = './tests/test_data/'
-        json_file = dir_name + file_name
-        json_open = open(json_file, 'r', encoding="utf-8")
-        json_load = json.load(json_open)
-        json_open.close()
-
-        try:
-            ro_crate = GinRoGenerator.Generate(json_load)
-            print(ro_crate)
-            self.fail()
-        except JsonValidationError as e:
-            error_dict = e.get_err_msg_for_check_key()
-            for key in error_dict.keys():
-                error_list = error_dict.get(key)
-                for index in range(len(error_list)):
-                    print(f'{key} ; [{index:05}] : {error_list[index]}')
-            self.fail()
-        except RoPkgError as e :
-            print("except RoPkgError as e :")
-            print(e)

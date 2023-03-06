@@ -57,11 +57,16 @@ RO-Crate Generate tools
         # you are able to obtain Ro-Crate(JSOn; dict).
     except JsonValidationError as e:
         # If given Raw Metadata to Function is invalid format, exception occurs.(derived dg-packager)
+        print(e)
+        # e.g.: {'required_key': ['invalid_key_name', /....................], 'invalid_value_type': ['error_msg', ......], 'invalid_value' :['error_msg', ......]}
+
 
         # (Do something.....)
 
     except RoPkgError as e:
         # If each value of metadata is invalid on checking property, exception occurs.(derived SDK Library)
+        print(e)
+        # {'results': [{'<ginfork.File Dockerfile>': {'name': 'This property is required, but not found.', 'sdDatePublished': 'The value is invalid format.'}}, {'<ginfork.File LICENSE>': {'name': 'This property is required, but not found.'}}]}
 
         # (Do something.....)
     ```
