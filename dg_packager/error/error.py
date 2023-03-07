@@ -22,12 +22,10 @@ class EntityParameterError(Exception):
     pass
 
 class ParameterError(Exception):
+    pass
 
-    def get_msg(self):
-        t = traceback.format_exception_only(type(self), self)
-        return t
-
-    def get_msg_for_check_key(self):
+class JsonValidationError(Exception):
+    def get_err_msg_for_check_key(self):
         t = traceback.format_exception_only(type(self), self)
         raw_error_msg = t[0]
         forward_index = raw_error_msg.find("{")
@@ -35,7 +33,14 @@ class ParameterError(Exception):
         shaped = raw_error_msg[forward_index:backward_index+1]
         return json.loads(shaped.replace('\'', '\"'))
 
-
+class RoPkgError(Exception):
+    def get_err_msg_for_check_key(self):
+        t = traceback.format_exception_only(type(self), self)
+        raw_error_msg = t[0]
+        forward_index = raw_error_msg.find("{")
+        backward_index = raw_error_msg.rfind("}")
+        shaped = raw_error_msg[forward_index:backward_index+1]
+        return json.loads(shaped.replace('\'', '\"'))
 class GitError(Exception):
     pass
 
