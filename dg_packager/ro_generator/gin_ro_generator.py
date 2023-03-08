@@ -49,6 +49,17 @@ class GinRoGenerator():
 
     @staticmethod
     def Generate(raw_metadata : dict[str, Any])->dict[str, Any]:
+        """Function for verifying to property of raw metadata and Generating RO-Crate.
+
+        Args:
+            raw_metadata (dict[str, Any]): base metadata to convert Ro-Crate. The data structure of this argument matches the response body of the Gin-Fork API(/repos/{repo_id}/{branch_name}/metadata).
+
+        Raises:
+            RoPkgError: Ro-Crate schema error
+
+        Returns:
+            dict[str, Any]: Generated Ro-Crate data
+        """
         ro_gnt = GinRoGenerator(raw_metadata)
 
         try:
@@ -63,11 +74,7 @@ class GinRoGenerator():
             raise RoPkgError(data)
 
     def generate(self) -> dict[str, Any]:
-        '''
-        RO-Crate生成メソッド
-        '''
         self.check_key()
-
         raw_metadata = self.raw_metadata
 
         # ==========================================================
