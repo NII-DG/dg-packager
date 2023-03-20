@@ -15,7 +15,6 @@ from dg_packager.entity.hosting_institution import HostingInstitutionEntity
 from dg_packager.entity.data_download import DataDownloadEntity
 from dg_packager.entity.repository_object import RepositoryObjectEntity
 from dg_packager.entity.cinical_research_registration import ClinicalResearchRegistrationEntity
-from dg_packager.utils.enum.gin_monitoring_types import ContentSizeType, DatasetStructureType, WorkflowIdentifierType
 from dg_packager.utils.enum.got_Informed_consent_type import GotInformedConsentType
 from dg_packager.utils.enum.imformed_consent_formata_type import InformedConsentFormatType
 from dg_packager.utils.enum.is_accessible_for_free import IsAccessibleForFreeType
@@ -195,9 +194,9 @@ class GinRoGenerator():
         gm_generator = GinMonitoringEntity()
         common_props = gm_generator.creata_common_props(
             about=ro_crate.root,
-            contentSize=ContentSizeType.value_of(gin_monitoring["contentSize"]),
-            workflowIdentifier=WorkflowIdentifierType.value_of(gin_monitoring["workflowIdentifier"]),
-            datasetStructure=DatasetStructureType.value_of(gin_monitoring["datasetStructure"])
+            contentSize=gin_monitoring["contentSize"],
+            workflowIdentifier=gin_monitoring["workflowIdentifier"],
+            datasetStructure=gin_monitoring["datasetStructure"]
             )
         gm_ent = gm_generator.generate_gifork(common_props=common_props)
         ro_crate.add(gm_ent)
