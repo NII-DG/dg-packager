@@ -28,6 +28,12 @@
 
    - [nii-dg repository](https://github.com/NII-DG/nii-dg)
 
+6. (Option) Deactivate virtual environment
+
+    ```bash
+    {your working dir}/dg-packager> deactivate
+    ```
+
 
 ## Directory configuration on program
 
