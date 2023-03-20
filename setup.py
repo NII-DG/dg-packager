@@ -26,6 +26,6 @@ setuptools.setup(
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
     ],
-    #install_requires=_requires_from_file('requirements.txt'),
+    #install_requires=................ [TODO] Set up after nii-dg library is released
 
 )
