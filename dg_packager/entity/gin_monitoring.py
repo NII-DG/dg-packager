@@ -30,7 +30,9 @@ class GinMonitoringEntity:
                             about: RootDataEntity,
                             contentSize: str,
                             workflowIdentifier: str,
-                            datasetStructure: str
+                            datasetStructure: str,
+                            experimentPackageList :list[str],
+                            parameterExperimentList :list[str]
                             ) -> dict[str, Any]:
         '''
         GinMonitoringEntityの共通プロパティをdict型で取得するメソッド
@@ -49,5 +51,11 @@ class GinMonitoringEntity:
 
         if datasetStructure:
             props["datasetStructure"] = datasetStructure
+
+        if len(experimentPackageList)>0:
+            props["experimentPackageList"] = experimentPackageList
+
+        if len(parameterExperimentList)>0:
+            props["parameterExperimentList"] = parameterExperimentList
 
         return props

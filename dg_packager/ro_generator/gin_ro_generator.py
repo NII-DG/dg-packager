@@ -196,7 +196,9 @@ class GinRoGenerator():
             about=ro_crate.root,
             contentSize=gin_monitoring["contentSize"],
             workflowIdentifier=gin_monitoring["workflowIdentifier"],
-            datasetStructure=gin_monitoring["datasetStructure"]
+            datasetStructure=gin_monitoring["datasetStructure"],
+            experimentPackageList=gin_monitoring["experimentPackageList"],
+            parameterExperimentList=gin_monitoring["parameterExperimentList"]
             )
         gm_ent = gm_generator.generate_gifork(common_props=common_props)
         ro_crate.add(gm_ent)
@@ -712,15 +714,25 @@ class GinRoGenerator():
             invaid_type_list.append(f'{object_name} is not object')
             return absence_list, invaid_type_list
 
-        targets = ['contentSize', 'workflowIdentifier', 'datasetStructure']
+        targets = ['contentSize', 'workflowIdentifier', 'datasetStructure', 'experimentPackageList', 'parameterExperimentList']
         key_list = data.keys()
         for target in targets:
             if target not in key_list:
                 absence_list.append(f'{object_name}.{target}')
+            elif target == 'experimentPackageList' or target == 'parameterExperimentList':
+                value = data.get(target)
+                if type(value) is not list:
+                    invaid_type_list.append(f'{object_name}.{target} is not array')
+                else:
+                    for index in range(len(value)):
+                        if type(value[index]) is not str:
+                            invaid_type_list.append(f'{object_name}.{target}[{index}] is not string')
+
             else:
                 value = data.get(target)
                 if type(value) is not str:
                     invaid_type_list.append(f'{object_name}.{target} is not string')
+
         return absence_list, invaid_type_list
 
     def check_key_funder_orgs(self):
