@@ -4,7 +4,7 @@
 from unittest import TestCase
 import json
 import logging
-from dg_packager.error.error import JsonValidationError, RoPkgError
+from dg_packager.error.error import JsonValidationError
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -516,6 +516,8 @@ class TestGinRoGenerator(TestCase):
                     "contentSize":  "",
                     "workflowIdentifier": "",
                     "datasetStructure": "",
+                    "experimentPackageList": [],
+                    "parameterExperimentList": [],
                 }
         }
         ro_gnt = GinRoGenerator(raw_metadata=test_data)
@@ -532,7 +534,7 @@ class TestGinRoGenerator(TestCase):
         ro_gnt = GinRoGenerator(raw_metadata=test_data)
         absence_list, invaid_type_list = ro_gnt.check_key_gin_monitoring()
 
-        self.assertEqual(3, len(absence_list))
+        self.assertEqual(5, len(absence_list))
         self.assertEqual(0, len(invaid_type_list))
 
         test_data = {
@@ -1434,6 +1436,8 @@ class TestGinRoGenerator(TestCase):
                     "contentSize":  "",
                     "workflowIdentifier": "",
                     "datasetStructure": "",
+                    "experimentPackageList": [],
+                    "parameterExperimentList": [],
                 },
             "dmps": [
                 {
@@ -1567,9 +1571,6 @@ class TestGinRoGenerator(TestCase):
             ro_gnt = GinRoGenerator(raw_metadata=test_data)
             ro_gnt.check_key()
         except JsonValidationError as e:
-            error_dict = e.get_err_msg_for_check_key()
-            for key in error_dict.keys():
-                print(f'{key} : {error_dict.get(key)}')
             self.fail()
 
     def test_check_key_empty(self):
@@ -1691,6 +1692,8 @@ class TestGinRoGenerator(TestCase):
                     "contentSize":  None,
                     "workflowIdentifier": None,
                     "datasetStructure": None,
+                    "experimentPackageList": None,
+                    "parameterExperimentList": None,
                 },
             "dmps": [
                 "", # invaid_type 1 OK
@@ -1851,7 +1854,7 @@ class TestGinRoGenerator(TestCase):
             self.assertEqual(113, len(required_key))
 
             invalid_value_type = error_dict['invalid_value_type']
-            self.assertEqual(143, len(invalid_value_type))
+            self.assertEqual(145, len(invalid_value_type))
             invalid_value = error_dict['invalid_value']
             self.assertEqual(1, len(invalid_value))
 
@@ -1866,13 +1869,14 @@ class TestGinRoGenerator(TestCase):
 
         try:
             ro_crate = ro_gnt.generate()
-            print(ro_crate)
         except JsonValidationError as e:
             error_dict = e.get_err_msg_for_check_key()
             for key in error_dict.keys():
                 error_list = error_dict.get(key)
                 for index in range(len(error_list)):
                     print(f'{key} ; [{index:05}] : {error_list[index]}')
+            print(e)
+            self.fail()
 
     def test_generate_with_data_from_gin_api(self):
         file_name = 'test_data_from_gin_api.json'

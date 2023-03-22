@@ -275,10 +275,15 @@
             "url": "https://github.com/username/repository/experiments/ex_1/output_data"
         }
     ],
-    "gin_monitorings": {
+    "gin_monitoring": {
         "contentSize": "1GB",
         "workflowIdentifier": "basic",
-        "datasetStructure": "with_code"
+        "datasetStructure": "with_code",
+        "experimentPackageList": [
+            "experiments/ex_2/",
+            "experiments/ex_1/"
+        ],
+        "parameterExperimentList": []
     },
     "dmps": [
         {
