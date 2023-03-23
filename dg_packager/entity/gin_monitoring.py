@@ -1,6 +1,5 @@
 from typing import Any
 from nii_dg.schema.ginfork import GinMonitoring
-from dg_packager.utils.enum.gin_monitoring_types import DatasetStructureType, ContentSizeType, WorkflowIdentifierType
 from nii_dg.ro_crate import RootDataEntity
 
 from dg_packager.utils.enum.property_type import PropertyType
@@ -29,9 +28,11 @@ class GinMonitoringEntity:
 
     def creata_common_props(self,
                             about: RootDataEntity,
-                            contentSize: ContentSizeType,
-                            workflowIdentifier: WorkflowIdentifierType,
-                            datasetStructure: DatasetStructureType
+                            contentSize: str,
+                            workflowIdentifier: str,
+                            datasetStructure: str,
+                            experimentPackageList :list[str],
+                            parameterExperimentList :list[str]
                             ) -> dict[str, Any]:
         '''
         GinMonitoringEntityの共通プロパティをdict型で取得するメソッド
@@ -42,10 +43,19 @@ class GinMonitoringEntity:
         if about_id:
             props["about"] = about
 
-        props["contentSize"] = contentSize.value
+        if contentSize:
+            props["contentSize"] = contentSize
 
-        props["workflowIdentifier"] = workflowIdentifier.value
+        if workflowIdentifier:
+            props["workflowIdentifier"] = workflowIdentifier
 
-        props["datasetStructure"] = datasetStructure.value
+        if datasetStructure:
+            props["datasetStructure"] = datasetStructure
+
+        if len(experimentPackageList)>0:
+            props["experimentPackageList"] = experimentPackageList
+
+        # if len(parameterExperimentList)>0:
+        #     props["parameterExperimentList"] = parameterExperimentList
 
         return props

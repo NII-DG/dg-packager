@@ -15,7 +15,6 @@ from dg_packager.entity.hosting_institution import HostingInstitutionEntity
 from dg_packager.entity.data_download import DataDownloadEntity
 from dg_packager.entity.repository_object import RepositoryObjectEntity
 from dg_packager.entity.cinical_research_registration import ClinicalResearchRegistrationEntity
-from dg_packager.utils.enum.gin_monitoring_types import ContentSizeType, DatasetStructureType, WorkflowIdentifierType
 from dg_packager.utils.enum.got_Informed_consent_type import GotInformedConsentType
 from dg_packager.utils.enum.imformed_consent_formata_type import InformedConsentFormatType
 from dg_packager.utils.enum.is_accessible_for_free import IsAccessibleForFreeType
@@ -195,9 +194,11 @@ class GinRoGenerator():
         gm_generator = GinMonitoringEntity()
         common_props = gm_generator.creata_common_props(
             about=ro_crate.root,
-            contentSize=ContentSizeType.value_of(gin_monitoring["contentSize"]),
-            workflowIdentifier=WorkflowIdentifierType.value_of(gin_monitoring["workflowIdentifier"]),
-            datasetStructure=DatasetStructureType.value_of(gin_monitoring["datasetStructure"])
+            contentSize=gin_monitoring["contentSize"],
+            workflowIdentifier=gin_monitoring["workflowIdentifier"],
+            datasetStructure=gin_monitoring["datasetStructure"],
+            experimentPackageList=gin_monitoring["experimentPackageList"],
+            parameterExperimentList=gin_monitoring["parameterExperimentList"]
             )
         gm_ent = gm_generator.generate_gifork(common_props=common_props)
         ro_crate.add(gm_ent)
@@ -713,15 +714,25 @@ class GinRoGenerator():
             invaid_type_list.append(f'{object_name} is not object')
             return absence_list, invaid_type_list
 
-        targets = ['contentSize', 'workflowIdentifier', 'datasetStructure']
+        targets = ['contentSize', 'workflowIdentifier', 'datasetStructure', 'experimentPackageList', 'parameterExperimentList']
         key_list = data.keys()
         for target in targets:
             if target not in key_list:
                 absence_list.append(f'{object_name}.{target}')
+            elif target == 'experimentPackageList' or target == 'parameterExperimentList':
+                value = data.get(target)
+                if type(value) is not list:
+                    invaid_type_list.append(f'{object_name}.{target} is not array')
+                else:
+                    for index in range(len(value)):
+                        if type(value[index]) is not str:
+                            invaid_type_list.append(f'{object_name}.{target}[{index}] is not string')
+
             else:
                 value = data.get(target)
                 if type(value) is not str:
                     invaid_type_list.append(f'{object_name}.{target} is not string')
+
         return absence_list, invaid_type_list
 
     def check_key_funder_orgs(self):
