@@ -1879,7 +1879,7 @@ class TestGinRoGenerator(TestCase):
             self.fail()
 
     def test_generate_with_data_from_gin_api(self):
-        file_name = 'test_data_from_gin_api.json'
+        file_name = 'metadata_from_gin_api_for_param.json'
         dir_name = './tests/test_data/'
         json_file = dir_name + file_name
         json_open = open(json_file, 'r', encoding="utf-8")

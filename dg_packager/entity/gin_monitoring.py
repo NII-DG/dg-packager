@@ -55,7 +55,7 @@ class GinMonitoringEntity:
         if len(experimentPackageList)>0:
             props["experimentPackageList"] = experimentPackageList
 
-        # if len(parameterExperimentList)>0:
-        #     props["parameterExperimentList"] = parameterExperimentList
+        if len(parameterExperimentList)>0:
+            props["parameterExperimentList"] = parameterExperimentList
 
         return props
