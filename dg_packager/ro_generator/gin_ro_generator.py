@@ -150,10 +150,20 @@ class GinRoGenerator():
             ro_crate.add(host_inst_ent)
             host_inst_dict[host_inst['@id']] = host_inst_ent
 
+        # ==========================================================
         # create person dict
+        # ==========================================================
+        p_gnt = PersonEntity()
         p_dict = dict[str, dict[str, Any]]()
         for p in raw_metadata['persons']:
+            aff_ent = research_org_dict.get(p['affiliation'])
+            if aff_ent == None:
+                aff_ent = org_gnt.generate_empty_base()
+            common_props = p_gnt.creata_common_props(name=p['name'], affiliation=aff_ent, email=p['email'], telephone=p['telephone'], alias=p['alias'])
+            p_ent = p_gnt.generate_base(id=p['url'], common_props=common_props)
+            ro_crate.add(p_ent)
             p_dict[p['id']] = p
+
 
         # ==========================================================
         # files data to RO-Crate(ginfork.File)
@@ -211,7 +221,7 @@ class GinRoGenerator():
         dmps = raw_metadata["dmps"]
         dmp_meta_gnt = DMPMetadataEntity()
         dmp_gnt = DMPEntity()
-        p_gnt = PersonEntity()
+
 
         for dmp in dmps:
             funder_type = dmp['type']
