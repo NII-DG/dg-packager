@@ -1889,12 +1889,7 @@ class TestGinRoGenerator(TestCase):
 
         try:
             ro_crate = ro_gnt.generate()
-            #print(json.dumps(ro_crate, indent=4))
-            ro = json.dumps(ro_crate, indent=4)
-            write_file_name = './tests/results/'+'result_' + file_name
-            f = open(write_file_name, 'w')
-            f.write(ro)
-            f.close()
+            print(ro_crate)
         except JsonValidationError as e:
             error_dict = e.get_err_msg_for_check_key()
             for key in error_dict.keys():
