@@ -1,0 +1,554 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "hasPart": [
+        {
+          "@id": "file1"
+        },
+        {
+          "@id": "file2"
+        },
+        {
+          "@id": "experiment/ex_1/input_data/data1"
+        },
+        {
+          "@id": "experiment/ex_1/output_data/data2"
+        },
+        {
+          "@id": "experiment/"
+        },
+        {
+          "@id": "experiment/ex_1/"
+        },
+        {
+          "@id": "experiment/ex_1/input_data/"
+        },
+        {
+          "@id": "experiment/ex_1/output_data/"
+        },
+        {
+          "@id": "experiment/ex_1/input_data/data1"
+        },
+        {
+          "@id": "experiment/ex_1/output_data/data2"
+        },
+        {
+          "@id": "experiment/ex_1/input_data/data1"
+        },
+        {
+          "@id": "experiment/ex_1/input_data/data1"
+        }
+      ],
+      "name": "Sample Project",
+      "description": "Sample Project",
+      "funder": [
+        {
+          "@id": "https://ror.org/004rtk039"
+        }
+      ],
+      "dateCreated": "2023-01-20T10:21:13.288+00:00",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/base/RootDataEntity.json"
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "file1",
+      "@type": "File",
+      "name": "file1",
+      "contentSize": "150B",
+      "sdDatePublished": "2023-01-20",
+      "encodingFormat": "text/plain",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://github.com/username/repository/file1",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/base/File.json"
+    },
+    {
+      "@id": "file2",
+      "@type": "File",
+      "name": "file2",
+      "contentSize": "150B",
+      "sdDatePublished": "2023-01-20",
+      "encodingFormat": "text/plain",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://github.com/username/repository/file2",
+      "experimentPackageFlag": false,
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/ginfork/File.json"
+    },
+    {
+      "@id": "experiment/ex_1/input_data/data1",
+      "@type": "File",
+      "name": "data1",
+      "contentSize": "150B",
+      "sdDatePublished": "2023-01-20",
+      "encodingFormat": "text/plain",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://github.com/username/repository/experiment/ex_1/input_data/data1",
+      "experimentPackageFlag": true,
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/ginfork/File.json"
+    },
+    {
+      "@id": "experiment/ex_1/output_data/data2",
+      "@type": "File",
+      "name": "data2",
+      "contentSize": "150B",
+      "sdDatePublished": "2023-01-20",
+      "encodingFormat": "text/plain",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://github.com/username/repository/experiment/ex_1/output_data/data2",
+      "experimentPackageFlag": true,
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/ginfork/File.json"
+    },
+    {
+      "@id": "experiment/",
+      "@type": "Dataset",
+      "name": "experiment",
+      "url": "https://github.com/username/repository/experiment",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/base/Dataset.json"
+    },
+    {
+      "@id": "experiment/ex_1/",
+      "@type": "Dataset",
+      "name": "ex_1",
+      "url": "https://github.com/username/repository/experiment/ex_1",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/base/Dataset.json"
+    },
+    {
+      "@id": "experiment/ex_1/input_data/",
+      "@type": "Dataset",
+      "name": "input_data",
+      "url": "https://github.com/username/repository/experiment/ex_1/input_data",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/base/Dataset.json"
+    },
+    {
+      "@id": "experiment/ex_1/output_data/",
+      "@type": "Dataset",
+      "name": "output_data",
+      "url": "https://github.com/username/repository/experiment/ex_1/output_data",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/base/Dataset.json"
+    },
+    {
+      "@id": "experiment/ex_1/input_data/data1",
+      "@type": "File",
+      "name": "data1",
+      "contentSize": "150B",
+      "sdDatePublished": "2023-01-20",
+      "encodingFormat": "text/plain",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "dmpDataNumber": {
+        "@id": "#dmp:1"
+      },
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/cao/File.json"
+    },
+    {
+      "@id": "experiment/ex_1/output_data/data2",
+      "@type": "File",
+      "name": "data2",
+      "contentSize": "150B",
+      "sdDatePublished": "2023-01-20",
+      "encodingFormat": "text/plain",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "dmpDataNumber": {
+        "@id": "#dmp:2"
+      },
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/cao/File.json"
+    },
+    {
+      "@id": "experiment/ex_1/input_data/data1",
+      "@type": "File",
+      "name": "data1",
+      "contentSize": "150B",
+      "sdDatePublished": "2023-01-20",
+      "encodingFormat": "text/plain",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "dmpDataNumber": {
+        "@id": "#dmp:3"
+      },
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/meti/File.json"
+    },
+    {
+      "@id": "experiment/ex_1/input_data/data1",
+      "@type": "File",
+      "name": "data1",
+      "contentSize": "150B",
+      "sdDatePublished": "2023-01-20",
+      "encodingFormat": "text/plain",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "dmpDataNumber": {
+        "@id": "#dmp:4"
+      },
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/amed/File.json"
+    },
+    {
+      "@id": "https://ror.org/004rtk039",
+      "@type": "Organization",
+      "name": "\u65e5\u672c\u533b\u7642\u7814\u7a76\u958b\u767a\u6a5f\u69cb",
+      "alias": "AMED",
+      "description": "AMEDAMEDAMEDAMEDAMEDAMEDAMEDAMED",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/base/Organization.json"
+    },
+    {
+      "@id": "https://github.com/username/repository",
+      "@type": "RepositoryObject",
+      "name": "repository",
+      "description": "\u30b5\u30f3\u30d7\u30eb\u30ea\u30dd\u30b8\u30c8\u30ea\u3067\u3059",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/base/RepositoryObject.json"
+    },
+    {
+      "@id": "https://ror.org/057zh3y96",
+      "@type": "Organization",
+      "name": "\u6771\u4eac\u5927\u5b66",
+      "alias": "Utokyo",
+      "description": "\u6771\u4eac\u3001\u5343\u8449\u306b\u30ad\u30e3\u30f3\u30d1\u30b9\u3092\u7f6e\u304f\u5927\u5b66",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/base/Organization.json"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-2345-6789",
+      "@type": "Person",
+      "name": "taro tokyo",
+      "affiliation": {
+        "@id": "https://ror.org/057zh3y96"
+      },
+      "email": "tokyo_taro@tokyo.ac.jp",
+      "alias": "gin_acount_taro",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/base/Person.json"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-2345-6789",
+      "@type": "Person",
+      "name": "hanako tokyo",
+      "affiliation": {
+        "@id": "https://ror.org/057zh3y96"
+      },
+      "email": "tokyo_hanako@tokyo.ac.jp",
+      "alias": "gin_acount_hanako",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/base/Person.json"
+    },
+    {
+      "@id": "https://ror.org/01hjzeq58",
+      "@type": "Organization",
+      "name": "\u5343\u8449\u5927\u5b66",
+      "alias": "University Chiba",
+      "description": "\u5343\u8449\u306b\u30ad\u30e3\u30f3\u30d1\u30b9\u3092\u7f6e\u304f\u5927\u5b66",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/base/Organization.json"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-2345-6789",
+      "@type": "Person",
+      "name": "yuki Chiba",
+      "affiliation": {
+        "@id": "https://ror.org/01hjzeq58"
+      },
+      "email": "chiba_yuki@chiba.ac.jp",
+      "alias": "gin_acount_yuki",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/base/Person.json"
+    },
+    {
+      "@id": "#ginmonitoring:1",
+      "@type": "GinMonitoring",
+      "about": {
+        "@id": "./"
+      },
+      "contentSize": "100GB",
+      "workflowIdentifier": "basic",
+      "datasetStructure": "with_code",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/ginfork/GinMonitoring.json"
+    },
+    {
+      "@id": "https://github.com/download/username/repository/experiment",
+      "@type": "DataDownload",
+      "description": "zip\u3067\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "uploadDate": "2023-01-20",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/base/DataDownload.json"
+    },
+    {
+      "@id": "https://ror.org/057zh3y96",
+      "@type": "HostingInstitution",
+      "name": "\u6771\u4eac\u5927\u5b66",
+      "address": "\u6771\u4eac\u90fd\u6587\u4eac\u533a\u672c\u90f7\uff17\u4e01\u76ee\uff13\u2212\uff11",
+      "description": "\u6771\u4eac\u5927\u5b66\u306f\u3001\u6771\u4eac\u90fd\u6587\u4eac\u533a\u306b\u672c\u90e8\u3092\u7f6e\u304f\u65e5\u672c\u306e\u56fd\u7acb\u5927\u5b66\u3067\u3042\u308b",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/base/HostingInstitution.json"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-2345-6789",
+      "@type": "Person",
+      "name": "taro tokyo",
+      "affiliation": {
+        "@id": "https://ror.org/057zh3y96"
+      },
+      "email": "tokyo_taro@tokyo.ac.jp",
+      "alias": "gin_acount_taro",
+      "eradResearcherNumber": "01234567",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/cao/Person.json"
+    },
+    {
+      "@id": "https://www.apache.org/licenses/LICENSE-2.0",
+      "@type": "License",
+      "name": "Apache License 2.0",
+      "description": "the licensed defined by Apache Software Foundation",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/base/License.json"
+    },
+    {
+      "@id": "#dmp:1",
+      "@type": "DMP",
+      "name": "Sample DMP input data",
+      "description": "CAO\u306b\u63d0\u51fa\u3059\u308b\u5165\u529b\u30c7\u30fc\u30bf\u8aac\u660e",
+      "accessRights": "open access",
+      "repository": {
+        "@id": "https://github.com/username/repository"
+      },
+      "contentSize": "over100GB",
+      "dataManager": {
+        "@id": "https://orcid.org/0000-0001-2345-6789"
+      },
+      "isAccessibleForFree": true,
+      "license": {
+        "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "usageInfo": "all free!!!!",
+      "hostingInstitution": {
+        "@id": "https://ror.org/057zh3y96"
+      },
+      "keyword": "\u6570\u5b66",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/cao/DMP.json"
+    },
+    {
+      "@id": "#dmp:2",
+      "@type": "DMP",
+      "name": "Sample DMP output data",
+      "description": "CAO\u306b\u63d0\u51fa\u3059\u308b\u51fa\u529b\u30c7\u30fc\u30bf\u8aac\u660e",
+      "accessRights": "embargoed access",
+      "repository": {
+        "@id": "https://github.com/username/repository"
+      },
+      "distribution": {
+        "@id": "https://github.com/download/username/repository/experiment"
+      },
+      "contentSize": "1GB",
+      "dataManager": {
+        "@id": "https://orcid.org/0000-0001-2345-6789"
+      },
+      "isAccessibleForFree": false,
+      "license": {
+        "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "usageInfo": "all free!!!!",
+      "hostingInstitution": {
+        "@id": "https://ror.org/057zh3y96"
+      },
+      "keyword": "\u6570\u5b66, \u7dda\u5f62\u4ee3\u6570",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/cao/DMP.json"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-2345-6789",
+      "@type": "Person",
+      "name": "hanako tokyo",
+      "affiliation": {
+        "@id": "https://ror.org/057zh3y96"
+      },
+      "email": "tokyo_hanako@tokyo.ac.jp",
+      "telephone": "090-XXXX-XXXX",
+      "alias": "gin_acount_hanako",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/cao/Person.json"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-2345-6789",
+      "@type": "Person",
+      "name": "yuki Chiba",
+      "affiliation": {
+        "@id": "https://ror.org/01hjzeq58"
+      },
+      "email": "chiba_yuki@chiba.ac.jp",
+      "alias": "gin_acount_yuki",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/cao/Person.json"
+    },
+    {
+      "@id": "#CAO-DMP",
+      "@type": "DMPMetadata",
+      "about": {
+        "@id": "./"
+      },
+      "name": "CAO-DMP",
+      "creator": [
+        {
+          "@id": "https://orcid.org/0000-0001-2345-6789"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-2345-6789"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-2345-6789"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "#dmp:1"
+        },
+        {
+          "@id": "#dmp:2"
+        }
+      ],
+      "repository": {
+        "@id": "https://github.com/username/repository"
+      },
+      "distribution": {
+        "@id": "https://github.com/download/username/repository/experiment"
+      },
+      "keyword": "\u79d1\u5b66",
+      "eradProjectId": "r111111",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/cao/DMPMetadata.json"
+    },
+    {
+      "@id": "#mailto:vvvv@vn.co.jp",
+      "@type": "ContactPoint",
+      "name": "UTokyo",
+      "email": "vvvv@vn.co.jp",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/base/ContactPoint.json"
+    },
+    {
+      "@id": "#dmp:3",
+      "@type": "DMP",
+      "name": "Sample DMP input data",
+      "description": "METI\u306b\u63d0\u51fa\u3059\u308b\u5165\u529b\u30c7\u30fc\u30bf\u8aac\u660e",
+      "accessRights": "open access",
+      "repository": {
+        "@id": "https://github.com/username/repository"
+      },
+      "contentSize": "over100GB",
+      "hostingInstitution": {
+        "@id": "https://ror.org/057zh3y96"
+      },
+      "wayOfManage": "self-managed",
+      "creator": [
+        {
+          "@id": "https://ror.org/01hjzeq58"
+        },
+        {
+          "@id": "https://ror.org/057zh3y96"
+        }
+      ],
+      "isAccessibleForFree": true,
+      "license": {
+        "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "usageInfo": "free",
+      "reasonForConcealment": "XXXXXXXXXX",
+      "measurementTechnique": "YYYYYYY",
+      "contactPoint": {
+        "@id": "#mailto:vvvv@vn.co.jp"
+      },
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/meti/DMP.json"
+    },
+    {
+      "@id": "#METI-DMP",
+      "@type": "DMPMetadata",
+      "about": {
+        "@id": "./"
+      },
+      "name": "METI-DMP",
+      "creator": [
+        {
+          "@id": "https://orcid.org/0000-0001-2345-6789"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-2345-6789"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-2345-6789"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "#dmp:3"
+        }
+      ],
+      "repository": {
+        "@id": "https://github.com/username/repository"
+      },
+      "distribution": {
+        "@id": "https://github.com/download/username/repository/experiment"
+      },
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/meti/DMPMetadata.json"
+    },
+    {
+      "@id": "https://jrct.niph.go.jp/latest-detail/jRCT202211111111",
+      "@type": "ClinicalResearchRegistration",
+      "name": "Japan Registry of Clinical Trials",
+      "value": "1234567",
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/amed/ClinicalResearchRegistration.json"
+    },
+    {
+      "@id": "#dmp:4",
+      "@type": "DMP",
+      "name": "Sample DMP input data",
+      "description": "METI\u306b\u63d0\u51fa\u3059\u308b\u5165\u529b\u30c7\u30fc\u30bf\u8aac\u660e",
+      "accessRights": "Restricted Closed Sharing",
+      "repository": {
+        "@id": "https://github.com/username/repository"
+      },
+      "contentSize": "over100GB",
+      "keyword": "bio",
+      "gotInformedConsent": "yes",
+      "accessRightsInfo": "Because the dataset contains personal information.",
+      "informedConsentFormat": "AMED",
+      "identifier": [
+        {
+          "@id": "https://jrct.niph.go.jp/latest-detail/jRCT202211111111"
+        }
+      ],
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/amed/DMP.json"
+    },
+    {
+      "@id": "#AMED-DMP",
+      "@type": "DMPMetadata",
+      "about": {
+        "@id": "./"
+      },
+      "name": "AMED-DMP",
+      "creator": [
+        {
+          "@id": "https://orcid.org/0000-0001-2345-6789"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-2345-6789"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-2345-6789"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "#dmp:4"
+        }
+      ],
+      "repository": {
+        "@id": "https://github.com/username/repository"
+      },
+      "distribution": {
+        "@id": "https://github.com/download/username/repository/experiment"
+      },
+      "funding": "Acceleration Transformative Research for Medical Innovation",
+      "chiefResearcher": {
+        "@id": "https://orcid.org/0000-0001-2345-6789"
+      },
+      "hostingInstitution": {
+        "@id": "https://ror.org/057zh3y96"
+      },
+      "dataManager": {
+        "@id": "https://orcid.org/0000-0001-2345-6789"
+      },
+      "@context": "https://raw.githubusercontent.com/ascade/nii_dg/develop/schema/context/amed/DMPMetadata.json"
+    }
+  ]
+}

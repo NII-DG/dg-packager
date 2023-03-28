@@ -1,0 +1,475 @@
+{
+    "research_project": {
+        "name": "Sample project",
+        "description": "Sample project description"
+    },
+    "funder_orgs": [
+        {
+            "type": "cao",
+            "@id": "https://sample.funder.org/1",
+            "name": "Sample Funder Org1",
+            "alias": "SFO1",
+            "description": "Sample Funder Org1 description"
+        },
+        {
+            "type": "meti",
+            "@id": "https://sample.funder.org/2",
+            "name": "Sample Funder Org2",
+            "alias": "SFO2",
+            "description": "Sample Funder Org2 description"
+        },
+        {
+            "type": "amed",
+            "@id": "https://sample.funder.org/3",
+            "name": "Sample Funder Org3",
+            "alias": "SFO3",
+            "description": "Sample Funder Org3 description"
+        }
+    ],
+    "research_orgs": [
+        {
+            "@id": "https://creator.affiliation/1",
+            "name": "Creator Affiliation 1",
+            "alias": "CA1",
+            "description": "Creator Affiliation 1 description"
+        },
+        {
+            "@id": "https://dataManager.affiliation/1",
+            "name": "DataManager Affiliation 1",
+            "alias": "DA1",
+            "description": "DataManager Affiliation 1 description"
+        },
+        {
+            "@id": "https://affiliation/1",
+            "name": "Affiliation 1",
+            "alias": "A1",
+            "description": "Affiliation 1 description"
+        },
+        {
+            "@id": "https://creator.affiliation/3",
+            "name": "Creator Affiliation 3",
+            "alias": "CA2",
+            "description": "Creator Affiliation 3 description"
+        },
+        {
+            "@id": "https://chiefResearcher.affiliation/1",
+            "name": "ChiefResearcher Affiliation 1",
+            "alias": "ChiefResearcherA2",
+            "description": "ChiefResearcher Affiliation 3 description"
+        }
+    ],
+    "licenses": [
+        {
+            "@id": "https://www.apache.org/licenses/LICENSE-2.0",
+            "name": "Apache License 2.0",
+            "description": "the licensed defined by Apache Software Foundation"
+        },
+        {
+            "@id": "https://www.apache.org/licenses/LICENSE-1.0",
+            "name": "Apache License 1.0",
+            "description": "the licensed defined by Apache Software Foundation"
+        }
+    ],
+    "data_downloads": [
+        {
+            "@id": "https://doi.org/repo/cao/download",
+            "description": "CAO Repo download",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "uploadDate": "2022-12-01"
+        },
+        {
+            "@id": "https://doi.org/repo/cao/child/download",
+            "description": "CAO Repo child download",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "uploadDate": "2022-12-01"
+        },
+        {
+            "@id": "https://doi.org/repo/meit/download",
+            "description": "MEIT Repo child download",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "uploadDate": "2022-12-01"
+        },
+        {
+            "@id": "https://doi.org/repo/meit/child/download",
+            "description": "MEIT Repo child download",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "uploadDate": "2022-12-01"
+        },
+        {
+            "@id": "https://doi.org/repo/amed/download",
+            "description": "AMED Repo child download",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "uploadDate": "2022-12-01"
+        },
+        {
+            "@id": "https://doi.org/repo/amed/child/download",
+            "description": "AMED Repo child download",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "uploadDate": "2022-12-01"
+        }
+    ],
+    "repository_objs": [
+        {
+            "@id": "https://doi.org/repo/cao/child",
+            "name": "CAO Repo child",
+            "description": "CAO Repo child description"
+        },
+        {
+            "@id": "https://doi.org/repo/cao",
+            "name": "CAO Repo",
+            "description": "CAO Repo description"
+        },
+        {
+            "@id": "https://doi.org/repo/meit",
+            "name": "MEIT Repo",
+            "description": "MEIT Repo description"
+        },
+        {
+            "@id": "https://doi.org/repo/meit/child",
+            "name": "MEIT Repo child",
+            "description": "MEIT Repo child description"
+        },
+        {
+            "@id": "https://doi.org/repo/amed",
+            "name": "AMED Repo",
+            "description": "AMED Repo description"
+        },
+        {
+            "@id": "https://doi.org/repo/amed/child",
+            "name": "AMED Repo child",
+            "description": "AMED Repo child description"
+        }
+    ],
+    "hosting_institutions": [
+        {
+            "@id": "https://hostingInstitution/ht1",
+            "name": "ht1",
+            "description": "ht1 description",
+            "address": "ht1 address"
+        },
+        {
+            "@id": "https://hostingInstitution/ht2",
+            "name": "ht2",
+            "description": "ht2 description",
+            "address": "ht2 address"
+        }
+    ],
+    "persons": [
+        {
+            "id": "1",
+            "url": "https://creator/creator1",
+            "name": "creator1",
+            "alias": "C1",
+            "affiliation": "https://creator.affiliation/1",
+            "email": "creator1@sample.com",
+            "telephone": "090-1111-1111",
+            "eradResearcherNumber": "01234567"
+        },
+        {
+            "id": "2",
+            "url": "https://dataManager/dm1",
+            "name": "dm1",
+            "alias": "DM1",
+            "affiliation": "https://dataManager.affiliation/1",
+            "email": "dm1@sample.com",
+            "telephone": "090-1111-1111",
+            "eradResearcherNumber": "01234567"
+        },
+        {
+            "id": "3",
+            "url": "https://creator/creator2",
+            "name": "creator2",
+            "alias": "C2",
+            "affiliation": "https://creator.affiliation/1",
+            "email": "creator2@sample.com",
+            "telephone": "090-1111-1111",
+            "eradResearcherNumber": "01234567"
+        },
+        {
+            "id": "4",
+            "url": "https://creator/creator3",
+            "name": "creator3",
+            "alias": "C3",
+            "affiliation": "https://creator.affiliation/3",
+            "email": "creator3@sample.com",
+            "telephone": "090-1111-1111",
+            "eradResearcherNumber": "01234567"
+        },
+        {
+            "id": "5",
+            "url": "https://chiefResearcher/cr1",
+            "name": "cr1",
+            "alias": "CR1",
+            "affiliation": "https://chiefResearcher.affiliation/1",
+            "email": "cr1@sample.com",
+            "telephone": "090-1111-1111",
+            "eradResearcherNumber": "01234567"
+        }
+    ],
+    "files": [
+        {
+            "@id": "text1.txt",
+            "name": "text1.txt",
+            "contentSize": "1",
+            "encodingFormat": "text/plain",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "https://github.com/username/repository/text1",
+            "sdDatePublished": "2022-12-01",
+            "experimentPackageFlag": false
+        },
+        {
+            "@id": "experiments/ex_1/input_data/text2.txt",
+            "name": "text2.txt",
+            "contentSize": "2",
+            "encodingFormat": "text/plain",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "https://github.com/username/repository/text2",
+            "sdDatePublished": "2022-12-01",
+            "experimentPackageFlag": true
+        },
+        {
+            "@id": "experiments/ex_1/source/text3.txt",
+            "name": "text3.txt",
+            "contentSize": "3",
+            "encodingFormat": "text/plain",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "https://github.com/username/repository/text3",
+            "sdDatePublished": "2022-12-01",
+            "experimentPackageFlag": true
+        },
+        {
+            "@id": "experiments/ex_1/output_data/text4.txt",
+            "name": "text4.txt",
+            "contentSize": "4",
+            "encodingFormat": "text/plain",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "https://github.com/username/repository/text4",
+            "sdDatePublished": "2022-12-01",
+            "experimentPackageFlag": true
+        }
+    ],
+    "datasets": [
+        {
+            "@id": "experiments/",
+            "name": "experiments",
+            "url": "https://github.com/username/repository/experiments"
+        },
+        {
+            "@id": "experiments/ex_1/",
+            "name": "ex_1",
+            "url": "https://github.com/username/repository/experiments/ex_1"
+        },
+        {
+            "@id": "experiments/ex_1/input_data/",
+            "name": "input_data",
+            "url": "https://github.com/username/repository/experiments/input_data"
+        },
+        {
+            "@id": "experiments/ex_1/source/",
+            "name": "source",
+            "url": "https://github.com/username/repository/experiments/ex_1/source"
+        },
+        {
+            "@id": "experiments/ex_1/output_data/",
+            "name": "output_data",
+            "url": "https://github.com/username/repository/experiments/ex_1/output_data"
+        }
+    ],
+    "gin_monitoring": {
+        "contentSize": "1GB",
+        "workflowIdentifier": "basic",
+        "datasetStructure": "with_code",
+        "experimentPackageList": [
+            "experiments/ex_2/",
+            "experiments/ex_1/"
+        ],
+        "parameterExperimentList": []
+    },
+    "dmps": [
+        {
+            "type": "cao",
+            "repository": "https://doi.org/repo/cao",
+            "distribution": "https://doi.org/repo/cao/download",
+            "keyword": "CAO keyword",
+            "eradProjectId": "123456",
+            "hasPart": [
+                {
+                    "name": "DMP DATA 1",
+                    "description": "DMP DATA 1 description",
+                    "creator": [
+                        "1",
+                        "2"
+                    ],
+                    "keyword": "DMP DATA 1 keyword",
+                    "accessRights": "open access",
+                    "availabilityStarts": "2030-04-01",
+                    "isAccessibleForFree": "True",
+                    "license": "https://www.apache.org/licenses/LICENSE-1.0",
+                    "usageInfo": "DMP DATA 1 usageInfo",
+                    "repository": "https://doi.org/repo/cao/child",
+                    "distribution": "https://doi.org/repo/cao/child/download",
+                    "contentSize": "1GB",
+                    "hostingInstitution": "https://hostingInstitution/ht1",
+                    "dataManager": "2",
+                    "related_data": [
+                        {
+                            "@id": "text1.txt",
+                            "name": "text1.txt",
+                            "contentSize": "1",
+                            "encodingFormat": "text/plain",
+                            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "url": "https://github.com/username/repository/text1",
+                            "sdDatePublished": "2022-12-01"
+                        },
+                        {
+                            "@id": "experiments/ex_1/input_data/text2.txt",
+                            "name": "text2.txt",
+                            "contentSize": "2",
+                            "encodingFormat": "text/plain",
+                            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "url": "https://github.com/username/repository/text2",
+                            "sdDatePublished": "2022-12-01"
+                        }
+                    ]
+                },
+                {
+                    "name": "DMP DATA 2",
+                    "description": "DMP DATA 2 description",
+                    "creator": [
+                        "1",
+                        "2"
+                    ],
+                    "keyword": "DMP DATA 1 keyword",
+                    "accessRights": "open access",
+                    "availabilityStarts": "2030-04-01",
+                    "isAccessibleForFree": "",
+                    "license": "https://www.apache.org/licenses/LICENSE-2.0",
+                    "usageInfo": "DMP DATA 1 usageInfo",
+                    "repository": "https://doi.org/repo/cao/child",
+                    "distribution": "https://doi.org/repo/cao/child/download",
+                    "contentSize": "1GB",
+                    "hostingInstitution": "https://hostingInstitution/ht1",
+                    "dataManager": "2",
+                    "related_data": [
+                        {
+                            "@id": "experiments/ex_1/source/text3.txt",
+                            "name": "text3.txt",
+                            "contentSize": "3",
+                            "encodingFormat": "text/plain",
+                            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "url": "https://github.com/username/repository/text3",
+                            "sdDatePublished": "2022-12-01"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "meti",
+            "creator": [
+                "3",
+                "4"
+            ],
+            "repository": "https://doi.org/repo/meit",
+            "distribution": "https://doi.org/repo/meit/download",
+            "hasPart": [
+                {
+                    "name": "MEIT DMP DATA 1",
+                    "description": "MEIT DMP DATA 1 description",
+                    "hostingInstitution": "https://hostingInstitution/ht2",
+                    "wayOfManage": "commissioned",
+                    "accessRights": "open access",
+                    "reasonForConcealment": "reasonForConcealment Smaple",
+                    "availabilityStarts": "2030-04-01",
+                    "creator": [
+                        "https://affiliation/1"
+                    ],
+                    "measurementTechnique": "measurementTechnique Sample",
+                    "isAccessibleForFree": "False",
+                    "license": "https://www.apache.org/licenses/LICENSE-2.0",
+                    "usageInfo": "usageInfo Sample",
+                    "repository": "https://doi.org/repo/meit/child",
+                    "contentSize": "1GB",
+                    "distribution": "https://doi.org/repo/meit/child/download",
+                    "contactPoint": {
+                        "name": "contactPoint Sample",
+                        "email": "contact@example.com",
+                        "telephone": "03-0000-0000"
+                    },
+                    "related_data": [
+                        {
+                            "@id": "experiments/ex_1/output_data/text4.txt",
+                            "name": "text4.txt",
+                            "contentSize": "4",
+                            "encodingFormat": "text/plain",
+                            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "url": "https://github.com/username/repository/text4",
+                            "sdDatePublished": "2022-12-01"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "amed",
+            "funding": "funding program",
+            "chiefResearcher": "5",
+            "creator": [
+                "1",
+                "5",
+                "2"
+            ],
+            "hostingInstitution": "https://hostingInstitution/ht2",
+            "dataManager": "2",
+            "repository": "https://doi.org/repo/amed",
+            "distribution": "https://doi.org/repo/amed/download",
+            "hasPart": [
+                {
+                    "name": "AMED DMP DATA 1",
+                    "description": "AMED DMP DATA 1 description",
+                    "keyword": "keyword Sample",
+                    "accessRights": "Unrestricted Open Sharing",
+                    "availabilityStarts": "2030-04-01",
+                    "reasonForConcealment": "reasonForConcealment Sample",
+                    "repository": "https://doi.org/repo/amed/child",
+                    "distribution": "https://doi.org/repo/amed/child/download",
+                    "contentSize": "over100GB",
+                    "gotInformedConsent": "yes",
+                    "informedConsentFormat": "AMED",
+                    "identifier": [
+                        {
+                            "@id": "https://jrct.niph.go.jp/latest-detail/jRCT202211111111",
+                            "name": "Japan Registry of Clinical Trials1",
+                            "value": "1234567"
+                        },
+                        {
+                            "@id": "https://jrct.niph.go.jp/latest-detail/jRCT202211111112",
+                            "name": "Japan Registry of Clinical Trials2",
+                            "value": "8901234"
+                        }
+                    ],
+                    "related_data": [
+                        {
+                            "@id": "experiments/ex_1/output_data/text4.txt",
+                            "name": "text4.txt",
+                            "contentSize": "4",
+                            "encodingFormat": "text/plain",
+                            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "url": "https://github.com/username/repository/text4",
+                            "sdDatePublished": "2022-12-01"
+                        },
+                        {
+                            "@id": "experiments/ex_1/input_data/text2.txt",
+                            "name": "text2.txt",
+                            "contentSize": "2",
+                            "encodingFormat": "text/plain",
+                            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "url": "https://github.com/username/repository/text2",
+                            "sdDatePublished": "2022-12-01"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
