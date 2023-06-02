@@ -3,7 +3,7 @@ from dg_packager.error.error import EnumValueError
 
 class AccessRightsType(Enum):
     '''
-    公開種別
+    Publication Type
     '''
 
     '''
@@ -31,7 +31,7 @@ class AccessRightsType(Enum):
 
 class CaoAndMetiAccessRightsType(Enum):
     '''
-    公開種別
+    Publication Type
     '''
 
     '''
@@ -51,7 +51,7 @@ class CaoAndMetiAccessRightsType(Enum):
 
 class AmedAccessRightsType(Enum):
     '''
-    公開種別
+    Publication Type
     '''
 
     '''

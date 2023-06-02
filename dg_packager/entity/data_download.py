@@ -5,12 +5,12 @@ from nii_dg.schema.base import DataDownload as Base_DataDownload
 
 class DataDownloadEntity:
     '''
-    DataDownloadEntity クラス
+    DataDownloadEntity class
     '''
 
     def __init__(self):
         '''
-        コンストラクタ
+        constructor
         '''
 
     def generate_base(self,
@@ -18,7 +18,7 @@ class DataDownloadEntity:
                       common_props: dict[str, Any]
                       ) -> Base_DataDownload:
         '''
-        base の DataDownload インスタンスの生成メソッド
+        Methods for creating DataDownload instances of base
         '''
         return Base_DataDownload(id_=id, props=common_props)
 
@@ -28,7 +28,7 @@ class DataDownloadEntity:
                             uploadDate: str,
                             ) -> dict[str, Any]:
         '''
-        DataDownload の共通プロパティをdict型で取得するメソッド
+        Method to get common properties of DataDownload in dict type
         '''
         props = dict[str, Any]()
 

@@ -11,12 +11,12 @@ from nii_dg.entity import Entity
 
 class DMPMetadataEntity:
     '''
-    DMPMetadataEntity クラス
+    DMPMetadataEntity class
     '''
 
     def __init__(self):
         '''
-        コンストラクタ
+        constructor
         '''
 
     def generate_amed(self,
@@ -29,7 +29,7 @@ class DMPMetadataEntity:
                     creator: list[Entity],
                     )->Amed_DMPMetadata:
         '''
-        amed の DMPMetadata インスタンスの生成メソッド
+        Methods for creating DMPMetadata instances in amed
         '''
         props = common_props
 
@@ -95,7 +95,7 @@ class DMPMetadataEntity:
                     eradProjectId: str
                     )->Cao_DMPMetadata:
         '''
-        cao の DMPMetadata インスタンスの生成メソッド
+        Methods for creating DMPMetadata instances in cao
         '''
         props = common_props
 
@@ -132,7 +132,7 @@ class DMPMetadataEntity:
                     creator: list[Person],
                     )->Meti_DMPMetadata:
         '''
-        meti の DMPMetadata インスタンスの生成メソッド
+        Methods for creating DMPMetadata instances in meti
         '''
         props = common_props
 
@@ -171,7 +171,7 @@ class DMPMetadataEntity:
                             distribution: DataDownload,
                             ) -> dict[str, Any]:
         '''
-        DMPMetadata の共通プロパティをdict型で取得するメソッド
+        Method to get common properties of DMPMetadata in dict type
         '''
         props = dict[str, Any]()
 

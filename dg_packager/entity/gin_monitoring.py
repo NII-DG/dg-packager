@@ -8,7 +8,7 @@ from dg_packager.utils.enum.property_type import PropertyType
 class GinMonitoringEntity:
     def __init__(self):
         '''
-        コンストラクタ
+        constructor
         '''
 
     def generate_gifork(self,
@@ -17,11 +17,11 @@ class GinMonitoringEntity:
         '''
         Sumary
         ----------------
-        ginforkのGinMonitoringEntityインスタンスの生成メソッド
+        Methods for creating GinMonitoringEntity instances in ginfork
 
         Note
         ----------------
-        [param] id は 1 以上で設定してください。
+        [param] The id should be set to 1 or higher.
 
         '''
         return GinMonitoring(props=common_props)
@@ -35,7 +35,7 @@ class GinMonitoringEntity:
                             parameterExperimentList :list[str]
                             ) -> dict[str, Any]:
         '''
-        GinMonitoringEntityの共通プロパティをdict型で取得するメソッド
+        Method to get common properties of GinMonitoringEntity with dict type
         '''
         props = dict[str, Any]()
 

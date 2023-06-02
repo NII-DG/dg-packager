@@ -25,21 +25,21 @@ class RoCrateUtil:
     @staticmethod
     def get_all_entity_data_form_json(ro_crate_json: dict[str, Any]) -> list[dict[str, Any]]:
         '''
-        RO-Crate(JSON) から 全ての Entity データを取得する。
+        Get all Entity data from RO-Crate(JSON).
         '''
         return ro_crate_json['@graph']
 
     @staticmethod
     def get_context_value_form_json(ro_crate_json: dict[str, Any]) -> str:
         '''
-        RO-Crate(JSON) から 全ての @context の値を取得する。
+        Get all @context values from RO-Crate(JSON).
         '''
         return str(ro_crate_json.get(PropertyType.CONTEXT.value))
 
     @staticmethod
     def get_entity_by_type_form_json(ro_crate_json: dict[str, Any], entity_type: EntityType) -> list[dict[str, Any]]:
         '''
-        RO-Crate(JSON) から指定の Entity Type のentity dataを取得する。
+        Obtains the entity data of the specified Entity Type from RO-Crate(JSON).
         '''
         ro_entity_list = RoCrateUtil.get_all_entity_data_form_json(ro_crate_json)
 
@@ -55,7 +55,7 @@ class RoCrateUtil:
     @staticmethod
     def get_entity_by_schema_form_json(ro_crate_json: dict[str, Any], schema_type: SchemaType) -> list[dict[str, Any]]:
         '''
-        RO-Crate(JSON) から指定の Schema Type のentity dataを取得する。
+        Obtains the specified Schema Type entity data from RO-Crate(JSON).
         '''
         ro_entity_list = RoCrateUtil.get_all_entity_data_form_json(ro_crate_json)
 
@@ -72,7 +72,7 @@ class RoCrateUtil:
     @staticmethod
     def get_entity_by_entity_and_schema_form_json(ro_crate_json: dict[str, Any], entity_type: EntityType,  schema_type: SchemaType) -> list[dict[str, Any]]:
         '''
-        RO-Crate(JSON) から指定の Schema Type と Entity Type のentity dataを取得する。
+        Obtains the entity data of the specified Schema Type and Entity Type from RO-Crate(JSON).
         '''
         ro_entity_list = RoCrateUtil.get_all_entity_data_form_json(ro_crate_json)
 
@@ -97,7 +97,7 @@ class RoCrateUtil:
     @staticmethod
     def get_entity_by_instance(ro_crate: ROCrate, entity_name: Type[Entity])-> list[Entity]:
         '''
-        RO-Crate(instance) から指定の Entity(base.File, cao.File, meti.File, ..... cao.DMP など) のentityリストを取得する。
+        Obtains an entity list of the specified Entity (base.File, cao.File, meti.File, ..... DMP, etc.) from RO-Crate(instance).
         '''
         return ro_crate.get_by_entity_type(entity=entity_name)
 
@@ -107,7 +107,7 @@ class RoCrateUtil:
     @staticmethod
     def get_file_by_instance(ro_crate: ROCrate, schema_type: SchemaType)-> list[Entity]:
         '''
-        RO-Crate(instance) から指定の Schema Type の File entity リストを取得する。
+        RObtains the File entity list of the specified Schema Type from RO-Crate(instance).
         '''
         if schema_type == SchemaType.BASE:
             return RoCrateUtil.get_entity_by_instance(ro_crate=ro_crate, entity_name=Base_File)
@@ -123,7 +123,7 @@ class RoCrateUtil:
     @staticmethod
     def get_dmp_metadata_by_instance(ro_crate: ROCrate, schema_type: SchemaType)-> list[Entity]:
         '''
-        RO-Crate(instance) から指定の Schema Type の DMPMetadata entity リストを取得する。
+        Obtain a DMPMetadata entity list of the specified Schema Type from RO-Crate(instance).
         '''
         if schema_type == SchemaType.METI:
             return RoCrateUtil.get_entity_by_instance(ro_crate=ro_crate, entity_name=Meti_DMPMetadata)
@@ -137,7 +137,7 @@ class RoCrateUtil:
     @staticmethod
     def get_dmp_by_instance(ro_crate: ROCrate, schema_type: SchemaType)-> list[Entity]:
         '''
-        RO-Crate(instance) から指定の Schema Type の DMP entity リストを取得する。
+        Obtains a DMP entity list of the specified Schema Type from RO-Crate(instance).
         '''
         if schema_type == SchemaType.METI:
             return RoCrateUtil.get_entity_by_instance(ro_crate=ro_crate, entity_name=Meti_DMP)
@@ -151,7 +151,7 @@ class RoCrateUtil:
     @staticmethod
     def get_person_by_instance(ro_crate: ROCrate, schema_type: SchemaType)-> list[Entity]:
         '''
-        RO-Crate(instance) から指定の Schema Type の Person entity リストを取得する。
+        Obtains a Person entity list of the specified Schema Type from RO-Crate(instance).
         '''
         if schema_type == SchemaType.BASE:
             return RoCrateUtil.get_entity_by_instance(ro_crate=ro_crate, entity_name=Base_Person)

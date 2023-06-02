@@ -3,7 +3,7 @@ from dg_packager.error.error import EnumValueError
 
 class ExperimentPackType(Enum):
     '''
-    実験パッケージの要素
+    Elements of the experimental package
     '''
 
     EXPERIMENTS = 'experiments'

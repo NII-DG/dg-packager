@@ -4,12 +4,12 @@ from nii_dg.schema.amed import ClinicalResearchRegistration as Amed_ClinicalRese
 
 class ClinicalResearchRegistrationEntity:
     '''
-    ClinicalResearchRegistrationEntity クラス
+    ClinicalResearchRegistrationEntity class
     '''
 
     def __init__(self):
         '''
-        コンストラクタ
+        constructor
         '''
 
     def generate_amed(self,
@@ -17,7 +17,7 @@ class ClinicalResearchRegistrationEntity:
                       common_props: dict[str, Any],
                       ) -> Amed_ClinicalResearchRegistration:
         '''
-        amed の ClinicalResearchRegistration インスタンスの生成メソッド
+        Methods for creating ClinicalResearchRegistration instances of amed
         '''
         props = common_props
         return Amed_ClinicalResearchRegistration(id_=id, props=props)
@@ -27,7 +27,7 @@ class ClinicalResearchRegistrationEntity:
                             value: str,
                             ) -> dict[str, Any]:
         '''
-        ClinicalResearchRegistration の共通プロパティをdict型で取得するメソッド
+        Method to get common properties of ClinicalResearchRegistration in dict type
         '''
         props = dict[str, Any]()
         if name:

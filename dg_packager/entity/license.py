@@ -4,12 +4,12 @@ from nii_dg.schema.base import License as Base_License
 
 class LicenseEntity:
     '''
-    LicenseEntity クラス
+    LicenseEntity class
     '''
 
     def __init__(self):
         '''
-        コンストラクタ
+        constructor
         '''
 
     def generate_base(self,
@@ -17,7 +17,7 @@ class LicenseEntity:
                       common_props: dict[str, Any]
                       ) -> Base_License:
         '''
-        base の License インスタンスの生成メソッド
+        Methods for creating License instances of base
         '''
         return Base_License(id_=id, props=common_props)
 
@@ -26,7 +26,7 @@ class LicenseEntity:
                             description: str,
                             ) -> dict[str, Any]:
         '''
-        License の共通プロパティをdict型で取得するメソッド
+        Method to get common properties of License with dict type
         '''
         props = dict[str, Any]()
 

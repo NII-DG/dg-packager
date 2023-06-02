@@ -11,12 +11,12 @@ from nii_dg.schema.ginfork import File as Ginfork_File
 
 class FileEntity:
     '''
-    FileEntity クラス
+    FileEntity class
     '''
 
     def __init__(self):
         '''
-        コンストラクタ
+        constructor
         '''
 
     def generate_base(self,
@@ -24,7 +24,7 @@ class FileEntity:
                       common_props: dict[str, Any]
                       ) -> Base_File:
         '''
-        base の File インスタンスの生成メソッド
+        Methods for creating File instances of base
         '''
         return Base_File(id_=id, props=common_props)
 
@@ -34,7 +34,7 @@ class FileEntity:
                      dmpDataNumber: Cao_DMP,
                      ) -> Cao_File:
         '''
-        cao の File インスタンスの生成メソッド
+        Methods for creating File instances in cao
         '''
         props = common_props
 
@@ -66,7 +66,7 @@ class FileEntity:
                       dmpDataNumber: Amed_DMP,
                       ) -> Amed_File:
         '''
-        amed の File インスタンスの生成メソッド
+        Methods for creating File instances of amed
         '''
         props = common_props
 
@@ -98,7 +98,7 @@ class FileEntity:
                       dmpDataNumber: Meti_DMP
                       ) -> Meti_File:
         '''
-        meti の File インスタンスの生成メソッド
+        Methods for creating File instances of meti
         '''
         props = common_props
 
@@ -130,7 +130,7 @@ class FileEntity:
                          experimentPackageFlag: bool
                          ) -> Ginfork_File:
         '''
-        ginfork の File インスタンスの取得メソッド
+       Methods to get a File instance in ginfork
         '''
         props = common_props
         props["experimentPackageFlag"] = experimentPackageFlag
@@ -161,7 +161,7 @@ class FileEntity:
                             url: str,
                             ) -> dict[str, Any]:
         '''
-        File の共通プロパティをdict型で取得するメソッド
+        Method to get common properties of File with dict type
         '''
         props = dict[str, Any]()
         if name:
@@ -173,7 +173,7 @@ class FileEntity:
         if sdDatePublished:
             props["sdDatePublished"] = sdDatePublished
 
-        # mime-type で 'x-'が含まれる場合はencodingFormatの設定をしない。
+        # If 'x-' is included in mime-type, do not set encodingFormat.
         if encodingFormat and 'x-' not in encodingFormat:
             props["encodingFormat"] = encodingFormat
 

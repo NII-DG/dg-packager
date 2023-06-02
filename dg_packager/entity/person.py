@@ -7,12 +7,12 @@ from typing import Any
 
 class PersonEntity:
     '''
-    PersonEntity クラス
+    PersonEntity class
     '''
 
     def __init__(self):
         '''
-        コンストラクタ
+        constructor
         '''
 
     def generate_base(self,
@@ -20,7 +20,7 @@ class PersonEntity:
                       common_props: dict[str, Any]
                       ) -> Base_Person:
         '''
-        base の Person インスタンスの生成メソッド
+        Methods for creating Person instances of base
         '''
         return Base_Person(id_=id, props=common_props)
 
@@ -30,7 +30,7 @@ class PersonEntity:
                     eradResearcherNumber: str
                     ) -> Cao_Person:
         '''
-        cao の Person インスタンスの生成メソッド
+        Methods for creating Person instances in cao
         '''
         props = common_props
         if eradResearcherNumber:
@@ -46,7 +46,7 @@ class PersonEntity:
                             alias: str,
                             ) -> dict[str, Any]:
         '''
-        Person の共通プロパティをdict型で取得するメソッド
+        Method to get common properties of Person with dict type
         '''
         props = dict[str, Any]()
         if name:

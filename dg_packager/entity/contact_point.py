@@ -6,19 +6,19 @@ from nii_dg.schema.base import ContactPoint as Base_ContactPoint
 
 class ContactPointEntity:
     '''
-    ContactPointEntity クラス
+    ContactPointEntity class
     '''
 
     def __init__(self):
         '''
-        コンストラクタ
+        constructor
         '''
 
     def generate_base(self,
                       common_props: dict[str, Any]
                       ) -> Base_ContactPoint:
         '''
-        base の DataDownload インスタンスの生成メソッド
+        Methods for creating DataDownload instances of base
         '''
         id = self.get_id(common_props=common_props)
         return Base_ContactPoint(id_=id, props=common_props)
@@ -29,7 +29,7 @@ class ContactPointEntity:
                             telephone: str = "",
                             ) -> dict[str, Any]:
         '''
-        ContactPoint の共通プロパティをdict型で取得するメソッド
+        Method to get common properties of ContactPoint in dict type
         '''
         props = dict[str, Any]()
 
@@ -37,16 +37,16 @@ class ContactPointEntity:
             props["name"] = name
 
         if email and not telephone:
-            # email有り と telephone無しの場合
+            # With email and without telephone
             props["email"] = email
         elif not email and telephone:
-            # email無し と telephone有りの場合
+            # Without email and with telephone
             props["telephone"] = telephone
         elif email and telephone:
-            # email と telephoneを両方ある場合
+            # With email and with telephone
             raise EntityParameterError('ContactPoint Entirty has only a property, email or telephone.')
         else:
-            # email と telephoneを両方ない場合
+            # Without email and without telephone
             raise EntityParameterError('ContactPoint Entity must a property, email or telephone.')
 
         return props

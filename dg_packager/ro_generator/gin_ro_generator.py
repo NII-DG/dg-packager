@@ -63,7 +63,7 @@ class GinRoGenerator():
 
     def generate(self) -> dict[str, Any]:
         '''
-        RO-Crate生成メソッド
+        RO-Crate generation method
         '''
         self.check_key()
 
