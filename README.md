@@ -77,3 +77,18 @@ RO-Crate Generate tools
 
         # (Do something.....)
     ```
+
+## Branch and Release Management
+
+- `main`: Latest Release Branches
+  - Direct push to main is prohibited.
+- `develop/<name>`: branch for development
+- `feature/<name>`: branch for each function/modification
+  - Basically, create a `feature/<name>` branch from `develop/<name>` and merge it into the `develop/<name>` branch.
+
+Release work is done by creating a PR from `develop/<name>` to `main`, which is then merged after receiving the RV.
+
+## License
+
+[Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0).
+See the [LICENSE](./LICENSE).
