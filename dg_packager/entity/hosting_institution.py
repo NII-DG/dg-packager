@@ -4,12 +4,12 @@ from nii_dg.schema.base import HostingInstitution as Base_HostingInstitution
 
 class HostingInstitutionEntity:
     '''
-    HostingInstitutionEntity クラス
+    HostingInstitutionEntity class
     '''
 
     def __init__(self):
         '''
-        コンストラクタ
+        constructor
         '''
 
     def generate_base(self,
@@ -17,7 +17,7 @@ class HostingInstitutionEntity:
                       common_props: dict[str, Any]
                       ) -> Base_HostingInstitution:
         '''
-        base の HostingInstitution インスタンスの生成メソッド
+        Methods for creating HostingInstitution instances of base
         '''
         return Base_HostingInstitution(id_=id, props=common_props)
 
@@ -27,7 +27,7 @@ class HostingInstitutionEntity:
                             description: str,
                             ) -> dict[str, Any]:
         '''
-        HostingInstitution の共通プロパティをdict型で取得するメソッド
+        Method to get common properties of HostingInstitution with dict type
         '''
         props = dict[str, Any]()
 

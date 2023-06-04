@@ -16,12 +16,12 @@ from nii_dg.entity import Entity
 
 class DMPEntity:
     '''
-    DMPEntity クラス
+    DMPEntity class
     '''
 
     def __init__(self):
         '''
-        コンストラクタ
+        constructor
         '''
         self.ID_PREFIX = "#dmp:"
 
@@ -34,7 +34,7 @@ class DMPEntity:
                     reasonForConcealment: str
                      ) -> Amed_DMP:
         '''
-        amed の DMP インスタンスの生成メソッド
+        Methods for creating DMP instances of amed
         '''
         props = common_props
 
@@ -136,7 +136,7 @@ class DMPEntity:
 
                      ) -> Cao_DMP:
         '''
-        cao の DMP インスタンスの生成メソッド
+        Methods for creating DMP instances in cao
         '''
         props = common_props
 
@@ -208,7 +208,7 @@ class DMPEntity:
                             availabilityStarts:  str,
                             ) -> dict[str, Any]:
         '''
-        DMP の共通プロパティをdict型で取得するメソッド
+        Method to get common properties of DMP in dict type
         '''
         props = dict[str, Any]()
 
@@ -245,8 +245,7 @@ class DMPEntity:
     @staticmethod
     def is_open_access(dmp: ContextualEntity) -> bool:
         '''
-        DMP accessRights property が "open access" or "Unrestricted Open Sharing" なら真
-        それ以外なら偽
+        True if DMP accessRights property is "open access" or "Unrestricted Open Sharing", false otherwise
         '''
         is_open_access = False
         dmp_accessRights = dmp.data.get("accessRights")

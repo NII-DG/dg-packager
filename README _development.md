@@ -33,13 +33,3 @@
     ```bash
     {your working dir}/dg-packager> deactivate
     ```
-
-
-## Directory configuration on program
-
-```bash
-/
-├ README_development.md       development manual of dg-packager
-├ README.md                   manual of dg-packager
-└ env-***/                    virtual environment configuration
-```

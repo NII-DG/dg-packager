@@ -10,7 +10,7 @@ setuptools.setup(
     name="dg-packager",
     version="1.0.0",
     description="Some Platform metadata convert to RO-Crate",
-    license='XXXXXXXXXXXXXXXXXXXXXXXXXX',
+    license='Apache License 2.0',
     author="NII",
     long_description=long_description,
     long_description_content_type="text/markdown",

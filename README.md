@@ -2,11 +2,17 @@
 
 RO-Crate Generate tools
 
+## Function
+
+* Packaging of research metadata obtained from various services into RO-Crate in compliance with the nii-dg library schema.
+  * Support Services
+    1. [GIN-fork](https://dg.nii.ac.jp/)
+
 ## Installation
 
- - Python : >= 3.8
+- Python : >= 3.9
 
-1. install dg-packager
+1. Install dg-packager
 
     ```bash
     # Install from PyPI [TODO: not available yet]
@@ -22,7 +28,7 @@ RO-Crate Generate tools
     $ python3 -m pip install .
     ```
 
-2. install nii-dg(SDK library)
+2. Install [nii-dg library](https://github.com/NII-DG/nii-dg)
 
     ```bash
     $ mkdir {dir to clone nii-dg repository}
@@ -34,7 +40,6 @@ RO-Crate Generate tools
     ```
 
 ## Usage
-
 ### Getting RO-Crate from Raw metadata derived from some Data Storage Platform
 
 1. For Gin-Fork
@@ -50,11 +55,13 @@ RO-Crate Generate tools
     ```python
     from from dg_packager.ro_generator.gin_ro_generator import GinRoGenerator
     from dg_packager.error.error import JsonValidationError, RoPkgError
+    import json
 
     try:
         # Raw Metadata(Json; dict) acquired from Gin-fork API(by  1 step) give Generate Function.
         ro_crete = GinRoGenerator.Generate(raw_metadata)
-        # you are able to obtain Ro-Crate(JSOn; dict).
+        # you are able to obtain Ro-Crate(Json; dict).
+        print(json.dumps(ro_crete, indent=4))
     except JsonValidationError as e:
         # If given Raw Metadata to Function is invalid format, exception occurs.(derived dg-packager)
         print(e)
@@ -64,15 +71,24 @@ RO-Crate Generate tools
         # (Do something.....)
 
     except RoPkgError as e:
-        # If each value of metadata is invalid on checking property, exception occurs.(derived SDK Library)
+        # If each value of metadata is invalid on checking property, exception occurs.(derived nii-dg Library)
         print(e)
         # {'results': [{'<ginfork.File Dockerfile>': {'name': 'This property is required, but not found.', 'sdDatePublished': 'The value is invalid format.'}}, {'<ginfork.File LICENSE>': {'name': 'This property is required, but not found.'}}]}
 
         # (Do something.....)
     ```
 
-2. For AAAAA
+## Branch and Release Management
 
+- `main`: Latest Release Branches
+  - Direct push to main is prohibited.
+- `develop/<name>`: branch for development
+- `feature/<name>`: branch for each function/modification
+  - Basically, create a `feature/<name>` branch from `develop/<name>` and merge it into the `develop/<name>` branch.
 
+Release work is done by creating a PR from `develop/<name>` to `main`, which is then merged after receiving the RV.
 
-## Branch and Release Info
+## License
+
+[Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0).
+See the [LICENSE](./LICENSE).

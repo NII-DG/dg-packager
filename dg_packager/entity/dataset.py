@@ -4,12 +4,12 @@ from nii_dg.schema.base import Dataset as Base_Dataset
 
 class DatasetEntity:
     '''
-    DatasetEntityクラス
+    DatasetEntityclass
     '''
 
     def __init__(self):
         '''
-        コンストラクタ
+        constructor
         '''
 
     def generate_base(self,
@@ -17,7 +17,7 @@ class DatasetEntity:
                     common_props: dict[str, Any]
                     ) -> Base_Dataset:
         '''
-        baseのDatasetEntityインスタンスの生成メソッド
+        Methods for creating DatasetEntity instances of base
         '''
         return Base_Dataset(id_=id, props=common_props)
 

@@ -4,17 +4,17 @@ from nii_dg.schema.base import Organization as Base_Organization
 
 class OrganizationEntity:
     '''
-    OrganizationEntity クラス
+    OrganizationEntity class
     '''
 
     def __init__(self):
         '''
-        コンストラクタ
+        constructor
         '''
 
     def generate_base(self, id: str, common_props: dict[str, Any]) -> Base_Organization:
         '''
-        base の Organization インスタンスの生成メソッド
+        Methods for creating Organization instances of base
         '''
         return Base_Organization(id_=id, props=common_props)
 
@@ -24,7 +24,7 @@ class OrganizationEntity:
                             description: str
                             ) -> dict[str, Any]:
         '''
-        Organization の共通プロパティをdict型で取得するメソッド
+        Method to obtain common properties of Organization in dict type
         '''
         props = dict[str, Any]()
         if name:

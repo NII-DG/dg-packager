@@ -4,12 +4,12 @@ from nii_dg.schema.base import RepositoryObject as Base_RepositoryObject
 
 class RepositoryObjectEntity:
     '''
-    RepositoryObjectEntity クラス
+    RepositoryObjectEntity class
     '''
 
     def __init__(self):
         '''
-        コンストラクタ
+        constructor
         '''
 
     def generate_base(self,
@@ -17,7 +17,7 @@ class RepositoryObjectEntity:
                       common_props: dict[str, Any]
                       ) -> Base_RepositoryObject:
         '''
-        base の RepositoryObject インスタンスの生成メソッド
+        Methods for creating RepositoryObject instances of base
         '''
         return Base_RepositoryObject(id_=id, props=common_props)
 
@@ -26,7 +26,7 @@ class RepositoryObjectEntity:
                             description: str,
                             ) -> dict[str, Any]:
         '''
-        RepositoryObject の共通プロパティをdict型で取得するメソッド
+        Method to get common properties of RepositoryObject with dict type
         '''
         props = dict[str, Any]()
         if name:
