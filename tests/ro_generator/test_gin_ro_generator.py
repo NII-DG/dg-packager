@@ -1,6 +1,3 @@
-
-
-
 from unittest import TestCase
 import json
 import logging
